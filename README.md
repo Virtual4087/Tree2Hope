@@ -1,2 +1,2 @@
 # Tree2Hope
-First time trying to create a website with my own ideas
+Tree2Hope is a website dedicated to promoting the planting of trees as a means of restoring our planet's natural balance. This site provides information on the benefits of planting trees and offers a simple and accessible way for individuals, schools, and businesses to contribute to reforestation efforts. With a mission to create a greener and healthier world for future generations, Tree2Hope aims to inspire and empower people to take action in the fight against climate change.
