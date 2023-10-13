@@ -321,7 +321,8 @@ nav .nav_buttons{
 }
 
 .Goals{
-    height: 60vh;
+    padding: 22px;
+    height: 69vh;
     width: 70%;
     margin: 0px auto;
     display: grid;
@@ -351,6 +352,7 @@ nav .nav_buttons{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    
 
     gap: 4%;
     font-size: 14px;
@@ -594,4 +596,11 @@ nav .nav_buttons{
     position: absolute;
     bottom: 60%;
     right: 35%;
+}
+.spacing{
+    padding: 10px;
+}
+#colorwhite:hover{
+    color: white;
+
 }
