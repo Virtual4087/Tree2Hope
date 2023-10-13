@@ -393,6 +393,12 @@ nav .nav_buttons{
     font-size: 25px;
     cursor: pointer;
     border-radius: 15px;
+    transition: height 0.5s ease, width 0.5s ease;
+}
+
+.Option:hover {
+    height: 410px;
+    width: 350px; 
 }
 
 .get_involved #_1{
