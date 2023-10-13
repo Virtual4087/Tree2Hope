@@ -30,7 +30,7 @@ html{
     top: 0;
     bottom: 0;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(29, 29, 29, 0.6)), url("../images/For_Website/child-hands-holding-caring-young-green-plant.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(29, 29, 29, 0.6)), url("images/For_Website/child-hands-holding-caring-young-green-plant.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -264,7 +264,7 @@ nav .nav_buttons{
 .events{
     height: 60vh;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url(../images/For_Website/Event.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url(images/For_Website/Event.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -396,17 +396,17 @@ nav .nav_buttons{
 }
 
 .get_involved #_1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/For_Website/Individual.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("images/For_Website/Individual.jpg");
     background-size: cover;
 }
 
 .get_involved #_2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/For_Website/Businesses.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("images/For_Website/Businesses.jpg");
     background-size: cover;
 }
 
 .get_involved #_3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/For_Website/School.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("images/For_Website/School.jpg");
     background-size: cover;
 }
 
@@ -489,12 +489,11 @@ nav .nav_buttons{
     color: rgb(160, 160, 160);
     font-size: 15px;
     position: relative;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .links a:hover{
     color: rgb(255, 255, 255);
-    transform: scale(1.03);
 }
 
 .links .column{
