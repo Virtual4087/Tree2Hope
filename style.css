@@ -1,8 +1,12 @@
+*{
+    scroll-behavior:smooth;
+}
+
 body{
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-    height: 600vh;
+    /* height: 600vh; */
 
     display: flex;
     flex-direction: column;
@@ -15,9 +19,12 @@ html{
     scroll-behavior: smooth;
 }
 
+.section{
+    margin-bottom: 3em;
+}
+
 .banner{
     height: 100vh;
-
     display: grid;
     grid-template-rows: 10% 1fr;
 }
@@ -195,13 +202,15 @@ nav .nav_buttons{
 }
 
 .locations{
-    width: 70%;
     margin: 0px auto;
-
-    display: grid;
+    height: fit-content ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: grid;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat(3, 1fr); */
+    /* justify-items: center; */
     align-items: center;
     row-gap: 3%;
 }
@@ -224,14 +233,17 @@ nav .nav_buttons{
 .locations img{
     width: 300px;
     border-radius: 10px;
+    margin: 5px 10px;
     transition: 2sec;
     background-image: red;
+    margin: 10px auto;
 }
 
 .locations .country_images{
     position: relative;
     transition: 0.5s;
     cursor: pointer;
+    margin: 5px 10px;
 }
 
 .locations .country_images:hover{
@@ -242,12 +254,12 @@ nav .nav_buttons{
     color: white;
     font-size: 18px;
     font-family: 'Oswald', sans-serif;
-
+    max-width: inherit;
     position: absolute;
-    top: 83%;
+    top: 80%;
     left: 0;
     right: 0;
-    bottom: 2%;
+    bottom: 6%;
 
     text-align: center;
 
@@ -315,19 +327,27 @@ nav .nav_buttons{
 }
 
 .Video{
-    margin: 0px auto;
-    width: 1100px;
-    height: 620px;
+    margin: 2em auto;
+    width: 90vw;
+    height: 100vh;
 }
 
 .Goals{
+
     padding: 22px;
     height: 69vh;
     width: 70%;
+
+    width: 80vw;
+
     margin: 0px auto;
-    display: grid;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: grid;
     grid-template-rows: 0.3fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); */
     column-gap: 15vh;
     text-align: center;
 }
@@ -348,11 +368,17 @@ nav .nav_buttons{
 }
 
 .Goals .images {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.377);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     
+
+
+    justify-content: center;
+    max-width: 300px;
+    margin: 5px 10px;
+    padding: 10px 5px;
 
     gap: 4%;
     font-size: 14px;
@@ -374,11 +400,10 @@ nav .nav_buttons{
 }
 
 .get_involved{
-    width: 65%;
     margin: 0px auto;
-
+    width: 80vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -445,8 +470,6 @@ nav .nav_buttons{
 
     font-size: 20px;
 
-    position: absolute;
-    left: 90%;
 }
 
 .Donate button{
@@ -470,7 +493,6 @@ nav .nav_buttons{
 }
 
 .footer{
-    height: 400px;
     background-color: #141414;
     border-top: 1px solid black;
     color: rgb(160, 160, 160);
@@ -479,11 +501,12 @@ nav .nav_buttons{
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer .upper_part{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex: 1;
 }
 
@@ -515,7 +538,7 @@ nav .nav_buttons{
 .upper_part .signup {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;
 }
 
@@ -523,7 +546,7 @@ nav .nav_buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     gap: 15px;
 }
 
