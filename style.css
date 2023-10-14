@@ -19,6 +19,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.section{
+    margin-bottom: 3em;
+}
+
 .banner{
     height: 100vh;
     display: grid;
