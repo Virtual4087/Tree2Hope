@@ -20,7 +20,7 @@ html{
 }
 
 .section{
-    margin-bottom: 3em;
+    margin-bottom: 5rem;
 }
 
 .banner{
@@ -491,7 +491,7 @@ nav .nav_buttons{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer .upper_part{
@@ -528,7 +528,7 @@ nav .nav_buttons{
 .upper_part .signup {
     flex: 1;
     display: flex;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -536,7 +536,7 @@ nav .nav_buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     gap: 15px;
 }
 
