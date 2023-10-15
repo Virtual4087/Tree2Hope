@@ -2,6 +2,10 @@
   scroll-behavior: smooth;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -39,7 +43,6 @@ html {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
     url("images/For_Website/child-hands-holding-caring-young-green-plant.jpg");
-  box-shadow: inset 30px 30px 250px #000000, inset -30px -30px 250px #000000; /*added box shadow*/
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,7 +111,7 @@ nav .nav_buttons {
 }
 
 .nav_buttons .nav_button:hover {
-  color: rgb(51, 175, 20); /*changed colour of the nav buttons*/
+  color: rgb(255, 255, 255);
   transform: scale(1.1);
 }
 
@@ -168,7 +171,7 @@ nav .nav_buttons {
 }
 
 .page_buttons .two:hover {
-  color: rgb(53, 206, 15); /*changed to green colour*/
+  color: rgb(247, 247, 247);
 }
 
 .page_buttons button::before {
@@ -224,7 +227,6 @@ nav .nav_buttons {
   font-size: 35px;
   width: 100%;
   text-align: center;
-  font-weight: bold; /*added font weight*/
 }
 
 .locations .line {
@@ -357,7 +359,6 @@ nav .nav_buttons {
   font-size: 35px;
   grid-column-start: 1;
   grid-column-end: 4;
-  font-weight: bold; /*added font weight*/
 }
 
 .Goals .line {
@@ -492,74 +493,68 @@ nav .nav_buttons {
 }
 
 .footer {
+  max-width: 100%;
+  overflow: auto;
   background-color: #141414;
   border-top: 1px solid black;
   color: rgb(160, 160, 160);
   font-family: "Poppins", sans-serif;
-  padding: 0px 300px;
-
+  padding: 0px 150px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+}
+.footer,
+.footer a {
+  color: #999;
+  font-size: 0.8;
+  text-decoration: none;
+}
+.footer p {
+  margin-bottom: 1.5rem;
 }
 
 .footer .upper_part {
-  margin: 1rem auto; /*added margin*/
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
   display: flex;
   justify-content: space-between;
   flex: 1;
 }
-
-.upper_part .links {
-  flex: 1.5;
-  display: flex;
-  justify-content: space-between;
+.footer li {
+  line-height: 1.9;
 }
 
-.upper_part .links a {
-  text-decoration: none;
-  color: rgb(160, 160, 160);
-  font-size: 15px;
+.upper_part a {
   position: relative;
   transition: 0.2s;
 }
 
-.links a:hover {
+.upper_part a:hover {
   color: rgb(255, 255, 255);
-}
-
-.links .column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
 }
 
 .upper_part .signup {
   flex: 1;
   display: flex;
-  /* justify-content: flex-end; */
-  align-items: center;
 }
 
 .upper_part .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: flex-end; */
   gap: 15px;
 }
 
 .container input {
   height: 30px;
-  width: 250px;
-
-  border: 1px solid rgb(255, 255, 255);
+  width: 300px;
+  border: 1px solid rgb(194, 194, 194);
   border-radius: 5px;
   color: rgb(0, 0, 0);
   padding-left: 10px;
-  margin: 5px;
-  background-color: white;
+  margin: 5px 0px;
+  background-color: rgb(217, 216, 216);
 }
 
 .container input::placeholder {
@@ -571,10 +566,10 @@ nav .nav_buttons {
   font-size: 13px;
   letter-spacing: 0.5px;
   background-color: rgba(255, 255, 255, 0);
-  color: white;
-  border: 1px solid white;
-
-  padding: 8px 15px;
+  color: rgb(217, 216, 216);
+  border: 1px solid rgb(217, 216, 216);
+  justify-content: center;
+  padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
@@ -594,15 +589,12 @@ nav .nav_buttons {
   color: white;
 }
 
-.footer .lower_part {
+.lower_part .social_medias {
+  gap: 8px;
   flex: 0.3;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
-}
-
-.lower_part .social_medias {
-  gap: 10px;
 }
 
 .social_medias img {
@@ -615,8 +607,8 @@ nav .nav_buttons {
 }
 
 .lower_part .rights_reserved {
-  margin: 1rem auto; /*added margin*/
-  position: absolute;
-  bottom: 60%;
-  right: 35%;
+  position: relative;
+  justify-content: center;
+  flex: 0.3;
+  display: flex;
 }
