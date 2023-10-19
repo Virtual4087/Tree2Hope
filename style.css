@@ -212,7 +212,6 @@ nav .nav_buttons{
     grid-template-columns: repeat(3, 1fr); */
     /* justify-items: center; */
     align-items: center;
-    row-gap: 3%;
 }
 
 .locations .heading{
@@ -230,13 +229,21 @@ nav .nav_buttons{
     margin: 20px auto;
 }
 
+.image_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 20px;
+}
+
 .locations img{
     width: 100%;
     border-radius: 10px;
-    margin: 5px 10px;
+
     transition: 2sec;
     background-image: red;
-    margin: 10px auto;
 }
 
 .locations .country_images{
@@ -244,6 +251,7 @@ nav .nav_buttons{
     transition: 0.5s;
     cursor: pointer;
     margin: 5px 10px;
+    display: flex;
 }
 
 .locations .country_images:hover{
@@ -254,21 +262,23 @@ nav .nav_buttons{
     color: white;
     font-size: 18px;
     font-family: 'Oswald', sans-serif;
-    max-width: inherit;
     position: absolute;
+    bottom: 0;
     top: 80%;
     left: 0;
     right: 0;
-    bottom: 15px;
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.562);
     border-radius: 0px 0px 10px 10px;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .locations .country_images:hover span{
     background-color: #ffffff;
     color: #000000;
+    outline: 1px solid rgba(0, 0, 0, 0.248);
 }
 
 .events{
@@ -326,8 +336,8 @@ nav .nav_buttons{
 
 .Video{
     margin: 2em auto;
-    width: 90vw;
-    height: 100vh;
+    width: 70vw;
+    height: 80vh;
 }
 
 .Goals{
@@ -609,9 +619,3 @@ nav .nav_buttons{
     right: 35%;
 }
 
-.image_container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
-    padding: 20px;
-}
