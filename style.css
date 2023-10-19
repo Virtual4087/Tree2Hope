@@ -2,6 +2,25 @@
     scroll-behavior:smooth;
 }
 
+.quickLinkTextWrapper{
+    display: flex;
+    justify-content: center;
+    /* padding-left: 10rem; */
+    align-items: center;
+    gap: 3rem;
+    width: 70%;
+}
+
+.socialmediaTextWrapper{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+
+
+/* things to do/ */
+/* transistion part left of social media  */
+
 body{
     margin: 0px;
     padding: 0px;
@@ -484,34 +503,71 @@ nav .nav_buttons{
 
 .footer{
     background-color: #141414;
+    box-sizing: border-box;
     border-top: 1px solid black;
     color: rgb(160, 160, 160);
     font-family: 'Poppins', sans-serif;
-    padding: 0px 300px;
+    width: 100%;
+    padding: 0.5rem 2rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-
-.footer .upper_part{
-    display: flex;
     justify-content: space-between;
-    flex: 1;
+}
+.upperHeading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.upper_part .links{
+.qLine{
+    background-color: grey;
+    width: 200px;
+    height: 1px;
+}
+ 
+
+.upper_part{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+ .links{
     flex: 1.5;
     display: flex;
     justify-content: space-between;
+    height: auto;
 }
 
+.socialmediaName{
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+    letter-spacing: 0.5px;
+}
+
+.quick-links, .socialmediaTxt{
+    font-family: 'Poppins', sans-serif;
+    color: green;
+    letter-spacing: 1px;
+}
 .upper_part .links a{
     text-decoration: none;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
     color: rgb(160, 160, 160);
     font-size: 15px;
     position: relative;
     transition: 0.2s;
+}
+.socialmediaName :hover{
+    color: grey;
 }
 
 .links a:hover{
@@ -525,12 +581,7 @@ nav .nav_buttons{
     gap: 20px;
 }
 
-.upper_part .signup {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 
 .upper_part .container{
     display: flex;
@@ -571,34 +622,61 @@ nav .nav_buttons{
     transition: 0.5s;
 }
 
-.container button:hover{
-    transform: scale(1.05);
-    color: #000000;
-    background: rgb(255, 255, 255);
-}
 
-.container .Login{
-    font-size: 12px;
-}
+
 
 .container .Login a{
     color: white;
 }
 
+.copyright-disclaimer{
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.643);
+    padding-top: 0.5rem;
+}
 .footer .lower_part{
     flex: 0.3;
     display: flex;
-    justify-content: space-between;
-    position: relative;
+   
+}
+.socialMediaIcon{
+width: 42px;
+cursor: pointer;
+}
+.footer-line{
+    width: 90%;
+    height: 1px;
+    background-color: grey;
 }
 
-.lower_part .social_medias{
+.lower_part{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+.imgWrapper{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    cursor: pointer;
+}
+
+.lower_part {
     gap: 10px;
 }
 
-.social_medias img{
-    cursor: pointer;
+.imgWrapper img{
     transition: 0.5s;
+}
+
+.social_medias{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .social_medias img:hover{
@@ -610,3 +688,459 @@ nav .nav_buttons{
     bottom: 60%;
     right: 35%;
 }
+
+
+@media only screen and (min-width:650px) and (max-width:900px){
+
+.upper_part .links a{
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+    position: relative;
+    transition: 0.2s;
+}
+.upper_part .links a:hover{
+    color: white;
+}
+.upper_part{
+    padding-bottom: 1rem;
+}
+.socialmediaName{
+
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+    letter-spacing: 0.5px;
+}
+.socialmediaName:hover{
+    color: white;
+}
+
+.links{
+    display: flex;
+    gap: 2rem;
+}
+}
+
+
+
+@media only screen and (min-width:600px) and (max-width:650px){
+
+    .upper_part .links a{
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(160, 160, 160);
+        font-size: 8px;
+        position: relative;
+        transition: 0.2s;
+    }
+    .upper_part .links a:hover{
+        color: white;
+    }
+    
+    .socialmediaName{
+    
+        text-decoration: none;
+        color: rgb(160, 160, 160);
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        transition: 0.2s;
+        letter-spacing: 0.5px;
+    }
+    .socialmediaName:hover{
+        color: white;
+    }
+    .imgWrapper{
+        display: flex;
+        align-items: center;
+        height: 32px;
+
+        cursor: pointer;
+    }
+    .imgWrapper img{
+        height: 28px;
+        width: 28px;
+        transition: 0.5s;
+    }
+    
+    .social_medias{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .social_medias img:hover{
+        transform: scale(1.1);
+    }
+
+    }
+
+@media only screen and (min-width:500px) and (max-width:600px){
+
+    .upper_part .links a{
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(160, 160, 160);
+        font-size: 8px;
+        position: relative;
+        transition: 0.2s;
+    }
+    .upper_part .links a:hover{
+        color: white;
+    }
+    
+    .socialmediaName{
+    
+        text-decoration: none;
+        color: rgb(160, 160, 160);
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        transition: 0.2s;
+        letter-spacing: 0.5px;
+    }
+    .socialmediaName:hover{
+        color: white;
+    }
+    .imgWrapper{
+        display: flex;
+        align-items: center;
+        height: 32px;
+
+        cursor: pointer;
+    }
+    .imgWrapper img{
+        height: 28px;
+        width: 28px;
+        transition: 0.5s;
+    }
+    
+    .social_medias{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1px;
+    }
+    
+    .social_medias img:hover{
+        transform: scale(1.1);
+    }
+
+    }
+ @media only screen and (min-width:400px) and (max-width:500px){
+    .upper_part .links a{
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(160, 160, 160);
+        font-size: 10px;
+        position: relative;
+        transition: 0.2s;
+    }
+    .upper_part{
+        height: auto;
+
+    }
+
+
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1.25rem;
+
+    }
+    .upper_part .links a:hover{
+        color: white;
+    }
+    
+    .socialmediaName{
+    
+        text-decoration: none;
+        color: rgb(160, 160, 160);
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+        transition: 0.2s;
+        letter-spacing: 0.5px;
+    }
+    .socialmediaName:hover{
+        color: white;
+    }
+    .imgWrapper{
+        display: flex;
+        align-items: center;
+        height: 23px;
+
+        cursor: pointer;
+    }
+    .imgWrapper img{
+        height: 28px;
+        width: 28px;
+        transition: 0.5s;
+    }
+    
+    .social_medias{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1px;
+        width: 139px;
+    }
+    
+    .social_medias img:hover{
+        transform: scale(1.1);
+    }
+    .socialmediaTextWrapper{
+        display: none;
+    }
+    .links .column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+        width: 140px;
+    }
+    
+    .footer{
+        background-color: #141414;
+        box-sizing: border-box;
+        border-top: 1px solid black;
+        color: rgb(160, 160, 160);
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        padding: 0.5rem 2rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .quickLinkTextWrapper{
+        display: flex;
+        /* justify-content: center; */
+        /* padding-left: 10rem; */
+        align-items: center;
+        /* gap: 3rem; */
+        width: 100%;
+    }
+    .upper_part{
+        padding-bottom: 12px;
+    }
+
+ }
+
+
+
+ @media only screen and (min-width:300px) and (max-width:399px){
+    .upper_part .links a{
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(160, 160, 160);
+        font-size: 15px;
+        position: relative;
+        transition: 0.2s;
+    }
+    .upper_part{
+        height: auto;
+
+    }
+
+
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1.25rem;
+
+    }
+    .upper_part .links a:hover{
+        color: white;
+    }
+    
+    .socialmediaName{
+    
+        text-decoration: none;
+        color: rgb(160, 160, 160);
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        transition: 0.2s;
+        letter-spacing: 0.5px;
+    }
+    .socialmediaName:hover{
+        color: white;
+    }
+
+    .upper_part{
+        padding-bottom: 12px;
+    }
+    .imgWrapper{
+        display: flex;
+        align-items: center;
+        height: 23px;
+
+        cursor: pointer;
+    }
+    .imgWrapper img{
+        height: 28px;
+        width: 28px;
+        transition: 0.5s;
+    }
+    
+    .social_medias{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        width: 139px;
+    }
+    
+    .social_medias img:hover{
+        transform: scale(1.1);
+    }
+    .socialmediaTextWrapper{
+        display: none;
+    }
+    .links .column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+        width: 200px;
+
+    }
+    
+    .footer{
+        background-color: #141414;
+        box-sizing: border-box;
+        border-top: 1px solid black;
+        color: rgb(160, 160, 160);
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        padding: 0.5rem 2rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .quickLinkTextWrapper{
+        display: flex;
+        /* justify-content: center; */
+        /* padding-left: 10rem; */
+        align-items: center;
+        /* gap: 3rem; */
+        width: 100%;
+    }
+
+ }
+
+ @media only screen and (min-width:250px) and (max-width:299px){
+    .upper_part .links a{
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(160, 160, 160);
+        font-size: 15px;
+        position: relative;
+        transition: 0.2s;
+    }
+    .upper_part{
+        height: auto;
+
+    }
+
+
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1.25rem;
+
+    }
+    .upper_part .links a:hover{
+        color: white;
+    }
+    
+    .socialmediaName{
+    
+        text-decoration: none;
+        color: rgb(160, 160, 160);
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        transition: 0.2s;
+        letter-spacing: 0.5px;
+    }
+    .socialmediaName:hover{
+        color: white;
+    }
+
+    .upper_part{
+        padding-bottom: 12px;
+    }
+    .imgWrapper{
+        display: flex;
+        align-items: center;
+        height: 23px;
+
+        cursor: pointer;
+    }
+    .imgWrapper img{
+        height: 28px;
+        width: 28px;
+        transition: 0.5s;
+    }
+    
+    .social_medias{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        width: 139px;
+    }
+    
+    .social_medias img:hover{
+        transform: scale(1.1);
+    }
+    .socialmediaTextWrapper{
+        display: none;
+    }
+    .links .column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+        width: 200px;
+
+    }
+    
+    .footer{
+        background-color: #141414;
+        box-sizing: border-box;
+        border-top: 1px solid black;
+        color: rgb(160, 160, 160);
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        padding: 0.5rem 2rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .quickLinkTextWrapper{
+        display: flex;
+        /* justify-content: center; */
+        /* padding-left: 10rem; */
+        align-items: center;
+        /* gap: 3rem; */
+        width: 100%;
+    }
+
+ }
