@@ -231,7 +231,7 @@ nav .nav_buttons{
 }
 
 .locations img{
-    width: 300px;
+    width: 100%;
     border-radius: 10px;
     margin: 5px 10px;
     transition: 2sec;
@@ -259,10 +259,8 @@ nav .nav_buttons{
     top: 80%;
     left: 0;
     right: 0;
-    bottom: 6%;
-
+    bottom: 15px;
     text-align: center;
-
     background-color: rgba(0, 0, 0, 0.562);
     border-radius: 0px 0px 10px 10px;
     transition: 0.5s;
@@ -609,4 +607,11 @@ nav .nav_buttons{
     position: absolute;
     bottom: 60%;
     right: 35%;
+}
+
+.image_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    padding: 20px;
 }
