@@ -9,7 +9,7 @@
 Tree2Hope is a website dedicated to promoting the planting of trees as a means of restoring our planet's natural balance. This site provides information on the benefits of planting trees and offers a simple and accessible way for individuals, schools, and businesses to contribute to reforestation efforts. With a mission to create a greener and healthier world for future generations, Tree2Hope aims to inspire and empower people to take action in the fight against climate change.
 
 # 📖 Rules
-* To Contrite to the project your work must be orignal and cannot be copied from other sites (No Plagarism).
+* To Contribute to the project your work must be orignal and cannot be copied from other sites (No Plagarism).
 * No Spam requests are counted as well as grammar error fixes are not going to be counted in this repository.
 * We are looking for authentic and quality work put into this project as well as large community that will work together to expand Tree2Hope.
 * Contributors may participate in ways like "Technical Documentation, Uesr Experience Testing, Technical Blog Posts, Tutorials, or even Case Studies".
