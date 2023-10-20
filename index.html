@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Tree2Hope</title>
 
     <!-- font awesome cdn -->
@@ -29,13 +30,31 @@
             width="160px"
           />
         </div>
-        <div class="nav_buttons">
+        <div id="nav-text" class="nav_buttons">
           <a href="#" class="nav_button">HOME</a>
           <a href="#" class="nav_button">DONATE</a>
           <a href="#" class="nav_button">ABOUT</a>
           <a href="#footer" class="nav_button">CONTACT US</a>
         </div>
       </nav>
+      <!-- Menu Bar -->
+      <div class="MenuBar">
+
+        <i id="openMenu" class='bx bx-menu menu-button'></i>
+        
+        <div class="menu-container" id="menuContainer">
+          <div class="menu">
+            <span class="close-button" id="closeMenu">&times;</span>
+            <ul>
+              <li><a href="#" id="close">HOME</a></li>
+              <li><a href="#" id="close">DONATE</a></li>
+              <li><a href="#" id="close">ABOUT</a></li>
+              <li><a href="#footer" id="close">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--  -->
       <div class="body">
         <div class="text">
           <span class="Big_Text">PLANTING TREES BUILDING HOPE</span><br /><br />
@@ -246,4 +265,16 @@
       </div>
     </div>
   </body>
+  <script>
+    document.getElementById('openMenu').addEventListener('click', function () {
+      document.getElementById('menuContainer').style.display = 'flex';
+    });
+
+    document.getElementById('closeMenu').addEventListener('click', function () {
+      document.getElementById('menuContainer').style.display = 'none';
+    });
+    document.getElementById('close').addEventListener('click', function () {
+      document.getElementById('menuContainer').style.display = 'none';
+    });
+  </script>
 </html>
