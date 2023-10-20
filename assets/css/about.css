@@ -1,0 +1,183 @@
+
+
+* {
+  scroll-behavior: smooth;
+}
+
+.quickLinkTextWrapper {
+  display: flex;
+  justify-content: center;
+  /* padding-left: 10rem; */
+  align-items: center;
+  gap: 3rem;
+  width: 70%;
+}
+
+.socialmediaTextWrapper {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+}
+
+/* things to do/ */
+/* transistion part left of social media  */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  /* height: 600vh; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: relative;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.banner {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 1fr;
+  
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+    url("../images/child-hands-holding-caring-young-green-plant.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8%;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+  }
+  
+  nav .logo img {
+    cursor: pointer;
+  }
+  
+  nav .nav_buttons {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    width: auto; /* Remove width */
+    position: relative;
+  }
+  
+  .nav_buttons .nav_button {
+    text-decoration: none;
+    color: #bbbbbb;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    position: relative;
+  }
+  
+  .nav_buttons .nav_button::after {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 15%;
+    height: 2.5px;
+    width: 0;   
+    background-color: rgb(51, 175, 20);
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  .nav_buttons .nav_button:hover::after {
+    width: 70%;
+  }
+  
+  .nav_buttons .nav_button:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+  }
+  
+  /* To keep only "Home" in the right side of the screen */
+  .nav_buttons .nav_button:not(:first-child) {
+    display: none;
+  }
+  
+  /* Adjust padding and margin for the "Home" button */
+  .nav_buttons .nav_button:first-child {
+    padding: 0 20px; /* Add some padding to the "Home" button */
+    margin-left: auto; /* Push "Home" to the right side of the navbar */
+  }
+  
+.banner .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 2%;
+}
+
+.body .text {
+    color:white; font-family: 'Helvetica Neue', sans-serif;
+     font-size: 18px; 
+     line-height: 24px; 
+     margin: 0 0 24px;
+      text-align: center; 
+  border-right: 3px solid;
+  font-family: monospace;
+
+
+
+}
+
+.text .Big_Text {
+    color:white; 
+    font-size: 100px; font-weight: bold;
+     letter-spacing: -1px; 
+     line-height: 1; 
+     text-align: center;
+     font-family: verdana;
+     text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+  
+
+
+
