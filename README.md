@@ -35,6 +35,5 @@ Thanks a lot for spending your time helping Tree2Hope grow. Thanks a lot!
   <img src="https://contrib.rocks/image?repo=KaneshiroKeola/Tree2Hope" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
 
 
