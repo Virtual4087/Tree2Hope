@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Tree2Hope</title>
 
     <!-- font awesome cdn -->
@@ -25,17 +26,36 @@
         <div class="logo">
           <img
             src="./assets/images/4x/typography_logo.webp"
+            
             alt="Logo"
             width="160px"
           />
         </div>
-        <div class="nav_buttons">
+        <div id="nav-text" class="nav_buttons">
           <a href="#" class="nav_button">HOME</a>
-          <a href="#" class="nav_button">DONATE</a>
-          <a href="#" class="nav_button">ABOUT</a>
+          <a href="#donates" class="nav_button">DONATE</a>
+          <a href="#goals" class="nav_button">ABOUT</a>
           <a href="#footer" class="nav_button">CONTACT US</a>
         </div>
       </nav>
+      <!-- Menu Bar -->
+      <div class="MenuBar">
+
+        <i id="openMenu" class='bx bx-menu menu-button'></i>
+        
+        <div class="menu-container" id="menuContainer">
+          <div class="menu">
+            <span class="close-button" id="closeMenu">&times;</span>
+            <ul>
+              <li><a href="#" onclick="handleClose()" >HOME</a></li>
+              <li><a href="#donates" onclick="handleClose()" >DONATE</a></li>
+              <li><a href="#goals" onclick="handleClose()" >ABOUT</a></li>
+              <li><a href="#footer" onclick="handleClose()" >CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--  -->
       <div class="body">
         <div class="text">
           <span class="Big_Text">PLANTING TREES BUILDING HOPE</span><br /><br />
@@ -120,7 +140,7 @@
       ></iframe>
     </div>
 
-    <div class="Donate section">
+    <div id="donates" class="Donate section">
       <div class="text">
         Trees are nature's superheroes, fighting climate change, supporting
         livelihoods, and nurturing life.<br />
@@ -147,7 +167,7 @@
       <button>VIEW EVENTS</button>
     </div>
 
-    <div class="Goals section">
+    <div id="goal" class="Goals section">
       <div class="heading">
         OUR GOALS<br />
         <div class="line"></div>
@@ -246,4 +266,22 @@
       </div>
     </div>
   </body>
+  <script>
+    const close = document.querySelectorAll(".navclose");
+    document.getElementById('openMenu').addEventListener('click', function () {
+      document.getElementById('menuContainer').style.display = 'flex';
+    });
+
+    document.getElementById('closeMenu').addEventListener('click', function () {
+      document.getElementById('menuContainer').style.display = 'none';
+    });
+    document.querySelectorAll('.close').addEventListener('click', function () {
+      document.getElementById('menuContainer').style.display = 'none';
+    });
+
+    function handleClose(){
+        document.getElementById('menuContainer').style.display = 'none';
+    }
+
+  </script>
 </html>

@@ -8,6 +8,96 @@
   scroll-behavior: smooth;
 }
 
+/* Menu Bar */
+
+.menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.menu {
+  backdrop-filter: blur(5px);
+  background: rgba(30, 23, 20, 0.575);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  color: #000;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 28px;
+  font-size: 3.2rem;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 2x solid black;
+}
+
+.close-button:hover {
+  color: green;
+  outline: rgb(74, 18, 18);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  display: block;
+}
+
+.menu ul li a:hover {
+  color: green;
+}
+
+
+.menu-button {
+  cursor: pointer;
+  background: transparent;
+  color: rgb(82 80 80);
+  /* text-align:; */
+  display: block;
+  justify-content: end;
+  align-items: end;
+  font-size: 2.2rem;
+  padding: 15px 20px 0px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.menu-button:hover
+{
+  color: green;
+}
+
+/*  */
 .quickLinkTextWrapper {
   display: flex;
   justify-content: center;
@@ -31,7 +121,7 @@ body {
   padding: 0px;
   font-family: sans-serif;
   /* height: 600vh; */
-
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -532,6 +622,7 @@ nav .nav_buttons {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .upperHeading {
   display: flex;
   width: 100%;
@@ -566,6 +657,7 @@ nav .nav_buttons {
   color: green;
   letter-spacing: 1px;
 }
+
 .upper_part .links a {
   text-decoration: none;
   letter-spacing: 0.5px;
@@ -634,6 +726,7 @@ nav .nav_buttons {
   color: rgba(128, 128, 128, 0.643);
   padding-top: 0.5rem;
 }
+
 .footer .lower_part {
   flex: 0.3;
   display: flex;
@@ -695,6 +788,7 @@ nav .nav_buttons {
   transition: 0.2s;
   letter-spacing: 0.5px;
 }
+
 .socialmediaName:hover {
   color: #ffffff;
 }
@@ -709,9 +803,11 @@ nav .nav_buttons {
     position: relative;
     transition: 0.2s;
   }
+
   .upper_part .links a:hover {
     color: white;
   }
+
   .upper_part {
     padding-bottom: 1rem;
   }
@@ -732,9 +828,11 @@ nav .nav_buttons {
     position: relative;
     transition: 0.2s;
   }
+
   .upper_part .links a:hover {
     color: white;
   }
+
   .socialmediaName {
     font-size: 8px;
   }
@@ -750,6 +848,7 @@ nav .nav_buttons {
     position: relative;
     transition: 0.2s;
   }
+
   .upper_part .links a:hover {
     color: white;
   }
@@ -758,6 +857,7 @@ nav .nav_buttons {
     font-size: 8px;
   }
 }
+
 @media only screen and (min-width: 400px) and (max-width: 500px) {
   .upper_part .links a {
     text-decoration: none;
@@ -768,6 +868,7 @@ nav .nav_buttons {
     position: relative;
     transition: 0.2s;
   }
+
   .upper_part {
     height: auto;
   }
@@ -778,6 +879,7 @@ nav .nav_buttons {
     height: auto;
     gap: 1.25rem;
   }
+
   .upper_part .links a:hover {
     color: white;
   }
@@ -785,6 +887,7 @@ nav .nav_buttons {
   .socialmediaTextWrapper {
     display: none;
   }
+
   .links .column {
     display: flex;
     flex-direction: column;
@@ -815,6 +918,7 @@ nav .nav_buttons {
     /* gap: 3rem; */
     width: 100%;
   }
+
   .upper_part {
     padding-bottom: 12px;
   }
@@ -830,6 +934,7 @@ nav .nav_buttons {
     position: relative;
     transition: 0.2s;
   }
+
   .upper_part {
     height: auto;
   }
@@ -840,6 +945,7 @@ nav .nav_buttons {
     height: auto;
     gap: 1.25rem;
   }
+
   .upper_part .links a:hover {
     color: white;
   }
@@ -847,6 +953,7 @@ nav .nav_buttons {
   .socialmediaTextWrapper {
     display: none;
   }
+
   .links .column {
     display: flex;
     flex-direction: column;
@@ -889,6 +996,7 @@ nav .nav_buttons {
     position: relative;
     transition: 0.2s;
   }
+
   .upper_part {
     height: auto;
   }
@@ -899,6 +1007,7 @@ nav .nav_buttons {
     height: auto;
     gap: 1.25rem;
   }
+
   .upper_part .links a:hover {
     color: white;
   }
@@ -906,9 +1015,11 @@ nav .nav_buttons {
   .upper_part {
     padding-bottom: 12px;
   }
+
   .socialmediaTextWrapper {
     display: none;
   }
+
   .links .column {
     display: flex;
     flex-direction: column;
@@ -938,5 +1049,54 @@ nav .nav_buttons {
     align-items: center;
     /* gap: 3rem; */
     width: 100%;
+  }
+}
+
+.MenuBar {
+  display: none;
+}
+
+/* Responsivness */
+@media (max-width: 1272px) {
+
+  nav .nav_buttons {
+    width: 45%;
+  }
+}
+
+@media (max-width: 995px) {
+  #nav-text {
+    display: none;
+  }
+
+  .MenuBar {
+    display: contents;
+  }
+}
+
+@media (max-width: 412px) {
+  .Video {
+    margin: 2em auto;
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 395px) {
+  .image_container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 377px) {
+  .image_container {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 285px) {
+  .image_container {
+    padding: 0;
   }
 }
