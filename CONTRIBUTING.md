@@ -59,7 +59,7 @@ git push origin your-branch-name
 ### 8. Create a PR
 - At last, go to the [Pull Requests](https://github.com/Virtual4087/Tree2Hope/pulls) tab of the original repository. 
 - Click on the "New Pull Request" button to open a new pull request.
-- In the description, provide details about the changes you made according to the checklist. Be sure to provide a clear description of your changes and the problems they solve.
+- In the description, provide details about the changes you made. Be sure to provide a clear description of your changes and the problems they solve.
  Your PR will be reviewed, given feedback if needed, and if approved, will be merged into the main branch of the repository. 
 
 ## Thank You
