@@ -26,14 +26,15 @@
         <div class="logo">
           <img
             src="./assets/images/4x/typography_logo.webp"
+            
             alt="Logo"
             width="160px"
           />
         </div>
         <div id="nav-text" class="nav_buttons">
           <a href="#" class="nav_button">HOME</a>
-          <a href="#" class="nav_button">DONATE</a>
-          <a href="#" class="nav_button">ABOUT</a>
+          <a href="#donates" class="nav_button">DONATE</a>
+          <a href="#goals" class="nav_button">ABOUT</a>
           <a href="#footer" class="nav_button">CONTACT US</a>
         </div>
       </nav>
@@ -46,10 +47,10 @@
           <div class="menu">
             <span class="close-button" id="closeMenu">&times;</span>
             <ul>
-              <li><a href="#" id="close">HOME</a></li>
-              <li><a href="#" id="close">DONATE</a></li>
-              <li><a href="#" id="close">ABOUT</a></li>
-              <li><a href="#footer" id="close">CONTACT US</a></li>
+              <li><a href="#" onclick="handleClose()" >HOME</a></li>
+              <li><a href="#donates" onclick="handleClose()" >DONATE</a></li>
+              <li><a href="#goals" onclick="handleClose()" >ABOUT</a></li>
+              <li><a href="#footer" onclick="handleClose()" >CONTACT US</a></li>
             </ul>
           </div>
         </div>
@@ -139,7 +140,7 @@
       ></iframe>
     </div>
 
-    <div class="Donate section">
+    <div id="donates" class="Donate section">
       <div class="text">
         Trees are nature's superheroes, fighting climate change, supporting
         livelihoods, and nurturing life.<br />
@@ -166,7 +167,7 @@
       <button>VIEW EVENTS</button>
     </div>
 
-    <div class="Goals section">
+    <div id="goal" class="Goals section">
       <div class="heading">
         OUR GOALS<br />
         <div class="line"></div>
@@ -266,6 +267,7 @@
     </div>
   </body>
   <script>
+    const close = document.querySelectorAll(".navclose");
     document.getElementById('openMenu').addEventListener('click', function () {
       document.getElementById('menuContainer').style.display = 'flex';
     });
@@ -273,8 +275,13 @@
     document.getElementById('closeMenu').addEventListener('click', function () {
       document.getElementById('menuContainer').style.display = 'none';
     });
-    document.getElementById('close').addEventListener('click', function () {
+    document.querySelectorAll('.close').addEventListener('click', function () {
       document.getElementById('menuContainer').style.display = 'none';
     });
+
+    function handleClose(){
+        document.getElementById('menuContainer').style.display = 'none';
+    }
+
   </script>
 </html>

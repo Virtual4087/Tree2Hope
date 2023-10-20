@@ -79,7 +79,7 @@
 .menu-button {
   cursor: pointer;
   background: transparent;
-  color: green;
+  color: rgb(82 80 80);
   /* text-align:; */
   display: block;
   justify-content: end;
@@ -92,6 +92,10 @@
   z-index: 1;
 }
 
+.menu-button:hover
+{
+  color: green;
+}
 
 /*  */
 .quickLinkTextWrapper {
