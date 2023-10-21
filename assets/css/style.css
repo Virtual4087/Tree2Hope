@@ -626,7 +626,7 @@ nav .nav_buttons {
 .upperHeading {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .qLine {
@@ -724,7 +724,9 @@ nav .nav_buttons {
 .copyright-disclaimer {
   font-size: 14px;
   color: rgba(128, 128, 128, 0.643);
-  padding-top: 0.5rem;
+  padding-top: 1rem;
+  text-align: center;
+  margin: auto;
 }
 
 .footer .lower_part {
@@ -736,6 +738,7 @@ nav .nav_buttons {
   width: 90%;
   height: 1px;
   background-color: grey;
+  text-align: center;
 }
 
 .lower_part {
@@ -748,8 +751,9 @@ nav .nav_buttons {
 .social_medias {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction: row;
+  gap: 20px;
+  margin: auto;
 }
 
 .lower_part .rights_reserved {
