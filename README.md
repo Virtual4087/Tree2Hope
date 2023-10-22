@@ -61,14 +61,15 @@ Tree2Hope is a website dedicated to promoting the planting of trees as a means o
 - Check the [CONTRIBUTING.md](https://github.com/Virtual4087/Tree2Hope/blob/main/CONTRIBUTING.md) to start contributing to this project.
 - Both technical and non-technical contributions are welcome as long as they follow the [Rules for Contribution](#rules-for-contribution).
 
-## Thanks to all Contributors 🍀
+## 🌱 Thanks to all Contributors
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
+Thanks a lot for spending your time helping Tree2Hope grow. Thanks a lot! 🙌
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+<p align="left">
+ <a href="https://github.com/Virtual4087/Tree2Hope/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=Virtual4087/Tree2Hope" />
+ </a>
+</p>
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+Feel free to include even more emojis or adjust the placement of emojis to your liking. Emojis can add a fun and engaging touch to your README.
 
