@@ -765,7 +765,7 @@ nav .nav_buttons {
   align-items: center;
   height: 32px;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.75s ease-in-out;
 }
 
 .imgWrapper i {
