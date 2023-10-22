@@ -809,13 +809,13 @@ nav .nav_buttons {
   z-index: 1;
 }
 
-#popup {
+.popup {
   position: fixed;
   z-index: 2;
   top: 50%;
   left: 50%;
-  height: 160px;
-  width: 300px;
+  height: 192px;
+  width: 350px;
   transform: translate(-50%, -50%);
   background-color: #fffd;
   border: 1px solid #ccc;
@@ -826,11 +826,11 @@ nav .nav_buttons {
 
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-#popup p {
+.popup p {
   margin: 20px auto;
   text-align: center;
 }
-#popup button {
+.popup button {
   --color_2: #111111;
   color: #111111;
   background: none;
@@ -848,12 +848,12 @@ nav .nav_buttons {
   position: relative;
   overflow: hidden;
 }
-#popup button:hover {
+.popup button:hover {
   transform: scale(1.1);
   color: white;
   background: black;
 }
-#closePopupButton {
+.closePopupButton {
   display: block;
   margin-top: 10px;
 }
