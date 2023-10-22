@@ -1,291 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Tree2Hope</title>
 
-    <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Tree2Hope</title>
 
-    <link rel="icon" type="image/x-icon" href="./assets/images/4x/logo.webp" />
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsiveness.css" />
-  </head>
-  <body>
-    <div class="banner section">
-      <nav>
-        <div class="logo">
-          <img
-            src="./assets/images/4x/typography_logo.webp"
-            
-            alt="Logo"
-            width="160px"
-          />
-        </div>
-        <div id="nav-text" class="nav_buttons">
-          <a href="#" class="nav_button">HOME</a>
-          <a href="#donates" class="nav_button">DONATE</a>
-          <a href="#goals" class="nav_button">ABOUT</a>
-          <a href="#footer" class="nav_button">CONTACT US</a>
-        </div>
-      </nav>
-      <!-- Menu Bar -->
-      <div class="MenuBar">
+  <link rel="icon" type="image/x-icon" href="./assets/images/4x/logo.webp" />
 
-        <i id="openMenu" class='bx bx-menu menu-button'></i>
-        
-        <div class="menu-container" id="menuContainer">
-          <div class="menu">
-            <span class="close-button" id="closeMenu">&times;</span>
-            <ul>
-              <li><a href="#" onclick="handleClose()" >HOME</a></li>
-              <li><a href="#donates" onclick="handleClose()" >DONATE</a></li>
-              <li><a href="#goals" onclick="handleClose()" >ABOUT</a></li>
-              <li><a href="#footer" onclick="handleClose()" >CONTACT US</a></li>
-            </ul>
-          </div>
-        </div>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsiveness.css" />
+</head>
+
+<body>
+  <div class="banner section">
+    <nav>
+      <div class="logo">
+        <img src="./assets/images/4x/typography_logo.webp" alt="Logo" width="160px" />
       </div>
-      <!--  -->
-      <div class="body">
-        <div class="text">
-          <span class="Big_Text">PLANTING TREES BUILDING HOPE</span><br /><br />
-          Help us grow a greener tomorrow<br />Join us in our quest to heal the
-          earth and create a sustainable future
-        </div>
-        <div class="page_buttons">
-          <button class="one">VIEW PROGRESS</button>
-          <button class="two">PLANT A TREE</button>
+      <div id="nav-text" class="nav_buttons">
+        <a href="#" class="nav_button">HOME</a>
+        <a href="#donates" class="nav_button">DONATE</a>
+        <a href="#goals" class="nav_button">ABOUT</a>
+        <a href="#footer" class="nav_button">CONTACT US</a>
+      </div>
+    </nav>
+    <!-- Menu Bar -->
+    <div class="MenuBar">
+
+      <i id="openMenu" class='bx bx-menu menu-button'></i>
+
+      <div class="menu-container" id="menuContainer">
+        <div class="menu">
+          <span class="close-button" id="closeMenu">&times;</span>
+          <ul>
+            <li><a href="#" onclick="handleClose()">HOME</a></li>
+            <li><a href="#donates" onclick="handleClose()">DONATE</a></li>
+            <li><a href="#goals" onclick="handleClose()">ABOUT</a></li>
+            <li><a href="#footer" onclick="handleClose()">CONTACT US</a></li>
+          </ul>
         </div>
       </div>
     </div>
+    <!--  -->
+    <div class="body">
+      <div class="text">
+        <span class="Big_Text">PLANTING TREES BUILDING HOPE</span><br /><br />
+        Help us grow a greener tomorrow<br />Join us in our quest to heal the
+        earth and create a sustainable future
+      </div>
+      <div class="page_buttons">
+        <button class="one">VIEW PROGRESS</button>
+        <button class="two">PLANT A TREE</button>
+      </div>
+    </div>
+  </div>
 
-    <!-- <div class="trees_planted">
+  <!-- <div class="trees_planted">
         <div class="number"><span>40535</span><br>TREES PLANTED<br><br></div>
         <div class="text"><br>We plant trees on your behalf. $1 = 1 Tree Planted.<br>Plant a Tree, Restore Biodiversity, and Transform Our Planet.</div>
     </div> -->
 
-    <div class="locations section">
-      <div class="heading">
-        WHERE WE PLANT<br />
-        <div class="line"></div>
-      </div>
-      <div class="image_container">
-        <div class="country_images">
-          <img src="./assets/images/Countries/Nepal.webp" alt="Nepal" /><span
-            >Nepal</span
-          >
-        </div>
-        <div class="country_images">
-          <img src="./assets/images/Countries/Thailand.webp" alt="Thailand" /><span
-            >Thailand</span
-          >
-        </div>
-        <div class="country_images">
-          <img src="./assets/images/Countries/India.webp" alt="India" /><span
-            >India</span
-          >
-        </div>
-        <div class="country_images">
-          <img src="./assets/images/Countries/Maldives.webp" alt="Maldives" /><span
-            >Maldives</span
-          >
-        </div>
-        <div class="country_images">
-          <img src="./assets/images/Countries/Bhutan.webp" alt="Bhutan" /><span
-            >Bhutan</span
-          >
-        </div>
-        <div class="country_images">
-          <img src="./assets/images/Countries/Sri_Lanka.webp" alt="Sri Lanka" /><span
-            >Sri Lanka</span
-          >
-        </div>
-        <div class="country_images">
-          <img src="./assets/images/Countries/Malaysia.webp" alt="Malaysia" /><span
-            >Malaysia</span
-          >
-        </div>
-        <div class="country_images">
-          <img src="./assets/images/Countries/Indonesia.webp" alt="Indonesia" /><span
-            >Indonesia</span
-          >
-        </div>
-        <div class="country_images">
-          <img src="./assets/images/Countries/Hong_Kong.webp" alt="Hong_Kong" /><span
-            >Hong Kong</span
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="Video section">
-      <iframe
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/ibPe7iuTFZw"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-
-    <div id="donates" class="Donate section">
-      <div class="text">
-        Trees are nature's superheroes, fighting climate change, supporting
-        livelihoods, and nurturing life.<br />
-        Together, we can make a difference, one tree at a time.<br /><br /><span
-          >~ Founder</span
-        ><br /><br />
-      </div>
-      <button>JUST $1 PLANTS A TREE</button>
-    </div>
-
-    <div class="get_involved section">
-      <div class="Option" id="_1">INDIVIDUALS</div>
-      <div class="Option" id="_2">BUSINESSES</div>
-      <div class="Option" id="_3">SCHOOLS</div>
-    </div>
-
-    <div class="events section">
-      <div class="plant_with_us">
-        PLANT WITH US<span class="join_us"
-          >Join our local events and make a positive impact with your own
-          hands</span
-        >
-      </div>
-      <button>VIEW EVENTS</button>
-    </div>
-
-    <div id="goal" class="Goals section">
-      <div class="heading">
-        OUR GOALS<br />
-        <div class="line"></div>
-      </div>
-      <div class="images">
-        <img src="./assets/images/Target.webp" width="200px" />
-        <div class="text">
-          <span>TARGET<br /><br /></span>Planting 1 million trees worldwide
-          within the next 3 years.
-        </div>
-      </div>
-      <div class="images">
-        <img src="./assets/images/Reach.webp" width="200px" />
-        <div class="text">
-          <span>REACH<br /><br /></span>Expanding tree planting efforts to 30+
-          countries across the world.
-        </div>
-      </div>
-      <div class="images">
-        <img src="./assets/images/Awareness.webp" width="200px" />
-        <div class="text">
-          <span>EDUCATION AND AWARENESS<br /><br /></span>Raising awareness
-          about the importance of tree planting through educational programs,
-          workshops, and campaigns.
-        </div>
-      </div>
-    </div>
-
-    <div class="why_plant_trees?">
-      <div class="heading"></div>
+  <div class="locations section">
+    <div class="heading">
+      WHERE WE PLANT<br />
       <div class="line"></div>
-      <div class="answers"></div>
     </div>
-
-    <div class="footer" id="footer">
-      <div class="upper_part">
-        <div class="upperHeading">
-          <div class="quickLinkTextWrapper">
-            <!-- <div class="qLine"></div> -->
-
-            <h2 class="quick-links">Quick Links</h2>
-            <!-- <div class="qLine"></div> -->
-          </div>
-         
-        </div>
-
-        <div class="links">
-          <div class="column">
-            <a class="footerLinks" href="#">HOW TO DONATE</a>
-            <a class="footerLinks" href="#">PRIVACY POLICY</a>
-            <a class="footerLinks" href="#">REFUND POLICY</a>
-            <a class="footerLinks" href="#">TERMS OF SERVICES</a>
-          </div>
-
-          <div class="column">
-            <a class="footerLinks" href="#">OUR PARTNERS</a>
-            <a class="footerLinks" href="#">BECOME AN AFFILIATE</a>
-            <a class="footerLinks" href="#">SPONSOR US</a>
-            <a class="footerLinks" href="#">REPORT A PROBLEM</a>
-          </div>
-
-          <div class="column">
-            <a class="footerLinks" href="#">ABOUT US</a>
-            <a class="footerLinks" href="#">FAQS</a>
-            <a class="footerLinks" href="#">CONTACT US</a>
-            <a class="footerLinks" href="#">CAREERS</a>
-          </div>
-
-         
-        </div>
+    <div class="image_container">
+      <div class="country_images">
+        <img src="./assets/images/Countries/Nepal.webp" alt="Nepal" /><span>Nepal</span>
       </div>
-      <div class="footer-line"></div>
-      <div class="social_medias">
-        <div class="imgWrapper">
-          <i class="fa-brands fa-x-twitter"></i>
-          <a href="https://twitter.com" class="socialmediaName" target="_blank">TWITTER</a>
-        </div>
-        <div class="imgWrapper">
-          <i class="fa-brands fa-facebook"></i>
-          <a href="https://www.facebook.com" class="socialmediaName" target="_blank">FACEBOOK</a>
-        </div>
-        <div class="imgWrapper">
-          <i class="fa-brands fa-instagram"></i>
-          <a href="https://www.instagram.com" class="socialmediaName" target="_blank">INSTAGRAM</a>
-        </div>
-        <div class="imgWrapper">
-          <i class="fa-brands fa-youtube"></i>
-          <a href="https://www.youtube.com" class="socialmediaName" target="_blank">YOUTUBE</a>
-        </div>
-        <div class="imgWrapper">
-          <i class="fa-brands fa-linkedin"></i>
-          <a href="https://www.linkedin.com" class="socialmediaName" target="_blank">LINKEDIN</a>
-        </div>
+      <div class="country_images">
+        <img src="./assets/images/Countries/Thailand.webp" alt="Thailand" /><span>Thailand</span>
       </div>
-      <div class="lower_part">
-        <div class="copyright-disclaimer">
-          ©2023 - Tree2Hope All rights reserved
-        </div>
+      <div class="country_images">
+        <img src="./assets/images/Countries/India.webp" alt="India" /><span>India</span>
+      </div>
+      <div class="country_images">
+        <img src="./assets/images/Countries/Maldives.webp" alt="Maldives" /><span>Maldives</span>
+      </div>
+      <div class="country_images">
+        <img src="./assets/images/Countries/Bhutan.webp" alt="Bhutan" /><span>Bhutan</span>
+      </div>
+      <div class="country_images">
+        <img src="./assets/images/Countries/Sri_Lanka.webp" alt="Sri Lanka" /><span>Sri Lanka</span>
+      </div>
+      <div class="country_images">
+        <img src="./assets/images/Countries/Malaysia.webp" alt="Malaysia" /><span>Malaysia</span>
+      </div>
+      <div class="country_images">
+        <img src="./assets/images/Countries/Indonesia.webp" alt="Indonesia" /><span>Indonesia</span>
+      </div>
+      <div class="country_images">
+        <img src="./assets/images/Countries/Hong_Kong.webp" alt="Hong_Kong" /><span>Hong Kong</span>
       </div>
     </div>
-  </body>
-  <script>
-    const close = document.querySelectorAll(".navclose");
-    document.getElementById('openMenu').addEventListener('click', function () {
-      document.getElementById('menuContainer').style.display = 'flex';
-    });
+  </div>
 
-    document.getElementById('closeMenu').addEventListener('click', function () {
-      document.getElementById('menuContainer').style.display = 'none';
-    });
-    document.querySelectorAll('.close').addEventListener('click', function () {
-      document.getElementById('menuContainer').style.display = 'none';
-    });
+  <div class="Video section">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ibPe7iuTFZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
 
-    function handleClose(){
-        document.getElementById('menuContainer').style.display = 'none';
-    }
+  <div id="donates" class="Donate section">
+    <div class="text">
+      Trees are nature's superheroes, fighting climate change, supporting
+      livelihoods, and nurturing life.<br />
+      Together, we can make a difference, one tree at a time.<br /><br /><span>~ Founder</span><br /><br />
+    </div>
+    <button id="showPopupButton">JUST $1 PLANTS A TREE</button>
+  </div>
 
-  </script>
+  <div class="get_involved section">
+    <div class="Option" id="_1">INDIVIDUALS</div>
+    <div class="Option" id="_2">BUSINESSES</div>
+    <div class="Option" id="_3">SCHOOLS</div>
+  </div>
+
+  <div class="events section">
+    <div class="plant_with_us">
+      PLANT WITH US<span class="join_us">Join our local events and make a positive impact with your own
+        hands</span>
+    </div>
+    <button>VIEW EVENTS</button>
+  </div>
+
+  <div id="goal" class="Goals section">
+    <div class="heading">
+      OUR GOALS<br />
+      <div class="line"></div>
+    </div>
+    <div class="images">
+      <img src="./assets/images/Target.webp" width="200px" />
+      <div class="text">
+        <span>TARGET<br /><br /></span>Planting 1 million trees worldwide
+        within the next 3 years.
+      </div>
+    </div>
+    <div class="images">
+      <img src="./assets/images/Reach.webp" width="200px" />
+      <div class="text">
+        <span>REACH<br /><br /></span>Expanding tree planting efforts to 30+
+        countries across the world.
+      </div>
+    </div>
+    <div class="images">
+      <img src="./assets/images/Awareness.webp" width="200px" />
+      <div class="text">
+        <span>EDUCATION AND AWARENESS<br /><br /></span>Raising awareness
+        about the importance of tree planting through educational programs,
+        workshops, and campaigns.
+      </div>
+    </div>
+  </div>
+
+  <div class="why_plant_trees?">
+    <div class="heading"></div>
+    <div class="line"></div>
+    <div class="answers"></div>
+  </div>
+
+  <div class="footer" id="footer">
+    <div class="upper_part">
+      <div class="upperHeading">
+        <div class="quickLinkTextWrapper">
+          <!-- <div class="qLine"></div> -->
+
+          <h2 class="quick-links">Quick Links</h2>
+          <!-- <div class="qLine"></div> -->
+        </div>
+
+      </div>
+
+      <div class="links">
+        <div class="column">
+          <a class="footerLinks" href="#">HOW TO DONATE</a>
+          <a class="footerLinks" href="#">PRIVACY POLICY</a>
+          <a class="footerLinks" href="#">REFUND POLICY</a>
+          <a class="footerLinks" href="#">TERMS OF SERVICES</a>
+        </div>
+
+        <div class="column">
+          <a class="footerLinks" href="#">OUR PARTNERS</a>
+          <a class="footerLinks" href="#">BECOME AN AFFILIATE</a>
+          <a class="footerLinks" href="#">SPONSOR US</a>
+          <a class="footerLinks" href="#">REPORT A PROBLEM</a>
+        </div>
+
+        <div class="column">
+          <a class="footerLinks" href="#">ABOUT US</a>
+          <a class="footerLinks" href="#">FAQS</a>
+          <a class="footerLinks" href="#">CONTACT US</a>
+          <a class="footerLinks" href="#">CAREERS</a>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="social_medias">
+      <div class="imgWrapper">
+        <i class="fa-brands fa-x-twitter"></i>
+        <a href="https://twitter.com" class="socialmediaName" target="_blank">TWITTER</a>
+      </div>
+      <div class="imgWrapper">
+        <i class="fa-brands fa-facebook"></i>
+        <a href="https://www.facebook.com" class="socialmediaName" target="_blank">FACEBOOK</a>
+      </div>
+      <div class="imgWrapper">
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com" class="socialmediaName" target="_blank">INSTAGRAM</a>
+      </div>
+      <div class="imgWrapper">
+        <i class="fa-brands fa-youtube"></i>
+        <a href="https://www.youtube.com" class="socialmediaName" target="_blank">YOUTUBE</a>
+      </div>
+      <div class="imgWrapper">
+        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com" class="socialmediaName" target="_blank">LINKEDIN</a>
+      </div>
+    </div>
+    <div class="lower_part">
+      <div class="copyright-disclaimer">
+        ©2023 - Tree2Hope All rights reserved
+      </div>
+    </div>
+  </div>
+  <div id="overlay" class="hidden"></div>
+
+  <div id="popup" class="hidden">
+    <div class="popup-content">
+      <p>We haven't added this feature yet.</p>
+      <button id="closePopupButton">Close</button>
+    </div>
+  </div>
+</body>
+<script>
+  const showPopupButton = document.getElementById("showPopupButton");
+  const closePopupButton = document.getElementById("closePopupButton");
+  const popup = document.getElementById("popup");
+  const overlay = document.getElementById("overlay");
+  showPopupButton.addEventListener("click", function() {
+    popup.style.display = "block";
+    overlay.style.display = "block";
+  });
+
+  closePopupButton.addEventListener("click", function() {
+    popup.style.display = "none";
+    overlay.style.display = "none";
+  });
+
+  const close = document.querySelectorAll(".navclose");
+  document.getElementById('openMenu').addEventListener('click', function() {
+    document.getElementById('menuContainer').style.display = 'flex';
+  });
+
+  document.getElementById('closeMenu').addEventListener('click', function() {
+    document.getElementById('menuContainer').style.display = 'none';
+  });
+  document.querySelectorAll('.close').addEventListener('click', function() {
+    document.getElementById('menuContainer').style.display = 'none';
+  });
+
+  function handleClose() {
+    document.getElementById('menuContainer').style.display = 'none';
+  }
+</script>
+
 </html>
