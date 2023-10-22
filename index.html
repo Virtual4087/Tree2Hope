@@ -25,7 +25,7 @@
       </div>
       <div id="nav-text" class="nav_buttons">
         <a href="#" class="nav_button">HOME</a>
-        <a href="#donates" class="nav_button">DONATE</a>
+        <a href="#donates" class="nav_button showPopupButton" data-popup-trigger="donate">DONATE</a>
         <a href="#goals" class="nav_button">ABOUT</a>
         <a href="#footer" class="nav_button">CONTACT US</a>
       </div>
@@ -56,7 +56,7 @@
       </div>
       <div class="page_buttons">
         <button class="one">VIEW PROGRESS</button>
-        <button class="two">PLANT A TREE</button>
+        <button class="two showPopupButton" data-popup-trigger="cover-page">PLANT A TREE</button>
       </div>
     </div>
   </div>
@@ -112,7 +112,7 @@
       livelihoods, and nurturing life.<br />
       Together, we can make a difference, one tree at a time.<br /><br /><span>~ Founder</span><br /><br />
     </div>
-    <button id="showPopupButton">JUST $1 PLANTS A TREE</button>
+    <button class="showPopupButton" data-popup-trigger="donate">JUST $1 PLANTS A TREE</button>
   </div>
 
     <!--Added margin to bottom--> 
@@ -232,22 +232,32 @@
   </div>
   <div id="overlay" class="hidden"></div>
 
-  <div id="popup" class="hidden">
+  <div class="hidden popup">
     <div class="popup-content">
       <p>We haven't added this feature yet.</p>
-      <button id="closePopupButton">Close</button>
+      <button class="closePopupButton">Close</button>
     </div>
   </div>
 </body>
 <script>
-  const showPopupButton = document.getElementById("showPopupButton");
-  const closePopupButton = document.getElementById("closePopupButton");
-  const popup = document.getElementById("popup");
-  const overlay = document.getElementById("overlay");
-  showPopupButton.addEventListener("click", function() {
-    popup.style.display = "block";
-    overlay.style.display = "block";
-  });
+  const showPopupButtons = document.querySelectorAll(".showPopupButton");
+const closePopupButton = document.querySelector(".closePopupButton");
+const popup = document.querySelector(".popup");
+const overlay = document.getElementById("overlay");
+  // showPopupButton.addEventListener("click", function() {
+  //   popup.style.display = "block";
+  //   overlay.style.display = "block";
+  // });
+  showPopupButtons.forEach(button => {
+      button.addEventListener("click", function() {
+        // Determine which button was clicked and show the popup accordingly
+        const trigger = button.getAttribute("data-popup-trigger");
+        if (trigger === "donate" || trigger === "cover-page" || trigger === "navbar") {
+          popup.style.display = "block";
+          overlay.style.display = "block";
+        }
+      });
+    });
 
   closePopupButton.addEventListener("click", function() {
     popup.style.display = "none";
