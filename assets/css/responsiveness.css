@@ -128,6 +128,32 @@
     .upper_part {
         padding-bottom: 12px;
     }
+
+    
+
+    .social_medias{
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    .imgWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgWrapper i {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 440px) {
+    .socialmediaName{
+        font-size: 10px;
+    }
+    .social_medias{
+        gap: 20px;
+    }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 399px) {
@@ -176,7 +202,6 @@
         font-family: "Poppins", sans-serif;
         width: 100%;
         padding: 0.5rem 2rem;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -189,6 +214,25 @@
         align-items: center;
         /* gap: 3rem; */
         width: 100%;
+    }
+
+    .socialmediaName{
+        font-size: 10px;
+    }
+
+    .social_medias{
+        padding-top: 20px;
+        gap: 15px;
+    }
+
+    .imgWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgWrapper i {
+        margin-right: 0px;
     }
 }
 
@@ -256,6 +300,7 @@
         /* gap: 3rem; */
         width: 100%;
     }
+    
 }
 
 .MenuBar {
