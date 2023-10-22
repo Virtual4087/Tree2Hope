@@ -66,12 +66,9 @@ Tree2Hope is a website dedicated to promoting the planting of trees as a means o
 Thanks a lot for spending your time helping Tree2Hope grow. Thanks a lot! 
 
 <p align=left>
- <a href="https://github.com/purnasth"><img src="https://contrib.rocks/image?repo=purnasth/purnasth" /></a>
- <a href="https://github.com/AmosBlack"><img src="https://contrib.rocks/image?repo=AmosBlack/AmosBlack" /></a>
- <a href="https://github.com/Virtual4087"><img src="https://contrib.rocks/image?repo=Virtual4087/CS50W-Wiki" /></a>
- <a href="https://github.com/Abishkardhenga"><img src="https://contrib.rocks/image?repo=Abishkardhenga/Abishkardhenga" /></a>
- <a href="https://github.com/Bsodoge"><img src="https://contrib.rocks/image?repo=Bsodoge/Windows-10-Update-Screen" /></a>
- <a href="https://github.com/Ritish134"><img src="https://contrib.rocks/image?repo=Ritish134/Ritish134" /></a>
+ <a href="https://github.com/Virtual4087/Tree2Hope/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=Virtual4087/Tree2Hope" />
+</a>
 </p>
 
 
