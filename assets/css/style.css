@@ -540,7 +540,7 @@ nav .nav_buttons {
 .get_involved .Option:hover {
   background-color: rgba(149, 165, 166, 0.1);
   transform: scale(1.02);
-  color: #333;
+  color: lightgreen;
 }
 
 .get_involved #_1 {
