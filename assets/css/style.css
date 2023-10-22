@@ -775,7 +775,7 @@ nav .nav_buttons {
 }
 
 .imgWrapper:hover {
-  transform: translateY(-3px);
+  transform: scale(1.1);
 }
 
 .lower_part {
