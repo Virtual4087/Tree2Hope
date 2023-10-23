@@ -5,8 +5,12 @@ on: [pull_request_target, issues]
 jobs:
   greeting:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
     - uses: actions/first-interaction@v1
       with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "Thank you ${{ github.event.pull_request.user.login }} for bringing up this issue to help enhance our project even further! We'll review it soon. 🙌❤️"
         pr-message: "Thank you for opening a pull request ${{ github.event.pull_request.user.login }}. We'll will review it as soon as possible 🙌❤️"
