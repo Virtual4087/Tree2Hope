@@ -645,7 +645,8 @@ nav .nav_buttons {
 .links {
   flex: 1.5;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin: 0 10%;
   height: auto;
 }
 
