@@ -360,3 +360,9 @@
         width: 72%;
     }
 }
+
+@media (max-width: 375px){
+    .logo img{
+        width:130px;
+    }
+}
