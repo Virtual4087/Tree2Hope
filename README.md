@@ -44,8 +44,8 @@ Tree2Hope is a website dedicated to promoting the planting of trees as a means o
 Thanks a lot for spending your time helping Tree2Hope grow. Thanks a lot! 🙌
 
 <p align="left">
-<a href="https://github.com/remarkablemark/html-react-parser/graphs/contributors">
-  <img src="https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false">
+<a href="https://github.com/remarkablemark/Tree2Hope/graphs/contributors">
+  <img src="https://opencollective.com/Tree2Hope/contributors.svg?width=890&button=false">
 </a>
 </p>
 
