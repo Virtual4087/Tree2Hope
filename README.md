@@ -25,34 +25,11 @@
 
 # 📜Table of Contents
 * [Introduction](#introduction)
-* [Rules for Contribution](#rules-for-contribution)
 * [How to Contribute](#how-to-contribute)
 * [Contributors](#thanks-to-all-contributors)
 
 # Introduction
 Tree2Hope is a website dedicated to promoting the planting of trees as a means of restoring our planet's natural balance. This site provides information on the benefits of planting trees and offers a simple and accessible way for individuals, schools, and businesses to contribute to reforestation efforts. With a mission to create a greener and healthier world for future generations, Tree2Hope aims to inspire and empower people to take action in the fight against climate change.
-
-# 📜 Rules for Contribution:
-
-[![Contributions Welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=royalblue)](https://github.com/Virtual4087/Tree2Hope)
-[![Contributors](https://img.shields.io/github/contributors/Virtual4087/Tree2Hope?color=royalblue&style=flat-square)](https://github.com/Virtual4087/Tree2Hope)
-[![Maintained?](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?color=royalblue&style=flat-square)](https://github.com/Virtual4087/Tree2Hope)
-
-* To contribute to the project, your work must be original and should not be copied from other sites (Plagiarism is strictly prohibited).
-* No spam requests are accepted, and grammar error fixes won't be counted in this repository.
-* We are looking for authentic and quality work put into this project, as well as a large community that will work together to expand Tree2Hope.
-* Contributors may participate in ways like "Technical Documentation, User Experience Testing, Technical Blog Posts, Tutorials, or even Case Studies."
-* Non-Code Contributors who may just like to type and do lots of write-ups can contribute in many ways as well, like:
-  * Writing 📝
-  * Translating 🌐
-  * Editing ✏️
-  * Talks or Presentations 🎤
-  * Event Organization 🎉
-  * Podcasts 🎙️
-  * Social Media 📱
-  * Blog Posts 📰
-  * Video Production 🎥
-  * Graphic Design 🎨
 
 # How to Contribute:
 
