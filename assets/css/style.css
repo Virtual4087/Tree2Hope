@@ -197,6 +197,7 @@ nav .nav_buttons {
 
   transition-duration: 0.3s;
   position: relative;
+  text-wrap: nowrap;
 }
 
 .nav_buttons .nav_button::after {
