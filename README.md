@@ -38,9 +38,9 @@ Tree2Hope is a website dedicated to promoting the planting of trees as a means o
 - Check the [CONTRIBUTING.md](https://github.com/Virtual4087/Tree2Hope/blob/main/CONTRIBUTING.md) to start contributing to this project.
 - Both technical and non-technical contributions are welcome as long as they follow the [Rules for Contribution](#rules-for-contribution).
 
-## 🌱 Thanks to all Contributors
+# Thanks to all Contributors
 
-Thanks a lot for spending your time helping Tree2Hope grow. Thanks a lot! 🙌
+🌱 Thanks a lot for spending your time helping Tree2Hope grow. Thanks a lot! 🙌
 
 <p align="left">
  <a href="https://github.com/Virtual4087/Tree2Hope/graphs/contributors">
