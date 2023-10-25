@@ -776,10 +776,6 @@ nav .nav_buttons {
   margin-right: 10px;
 }
 
-.imgWrapper:hover {
-  transform: scale(1.1);
-}
-
 .lower_part {
   gap: 10px;
 }
