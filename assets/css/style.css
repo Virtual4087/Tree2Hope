@@ -855,3 +855,20 @@ nav .nav_buttons {
   display: block;
   margin-top: 10px;
 }
+.content-box {
+  color: rgb(160, 160, 160);
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: 3em;
+}
+
+.second-content-box {
+  padding: 1.5em 0;
+}
+.content-box img {
+  max-width: 100%; /* Ensure the image fits within the box */
+}
+
+/* You can further style the .content-box class as needed */
