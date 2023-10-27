@@ -368,6 +368,12 @@ nav .nav_buttons {
   display: flex;
 }
 
+.country_images:nth-child(2n-1):last-child{
+  grid-column: span 1;
+  width: 100%;
+  margin-left: 550px;
+}
+
 .locations .country_images:hover {
   transform: scale(1.05);
 }
