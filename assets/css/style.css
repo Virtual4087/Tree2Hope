@@ -491,10 +491,12 @@ nav .nav_buttons {
   flex-direction: column;
   justify-content: center;
   max-width: 300px;
-  margin: 5px 10px;
+  margin: 5px 20px;
   padding: 10px 5px;
   gap: 4%;
   font-size: 14px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s,transform 0.3s;
 }
 
 .Goals .images img {
@@ -510,6 +512,11 @@ nav .nav_buttons {
 .Goals .images .text {
   flex: 1;
   padding: 2%;
+}
+
+.Goals .images:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
 }
 
 .get_involved {

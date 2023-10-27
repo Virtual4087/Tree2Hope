@@ -24,6 +24,12 @@
     }
 }
 
+@media screen and (min-width: 909px) {
+    .Goals .images {
+        margin-bottom: 30px;
+    }
+}
+
 @media only screen and (min-width: 600px) and (max-width: 650px) {
     .upper_part .links a {
         text-decoration: none;
