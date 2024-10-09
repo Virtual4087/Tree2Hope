@@ -25,7 +25,7 @@
       </div>
       <div id="nav-text" class="nav_buttons">
         <a href="#" class="nav_button">HOME</a>
-        <a href="#donates" class="nav_button showPopupButton" data-popup-trigger="donate">DONATE</a>
+        <a href="#donates" class="nav_button showPopupButton">DONATE</a>
         <a href="./about.html" class="nav_button">ABOUT US</a>
         <a href="#footer" class="nav_button">CONTACT US</a>
       </div>
@@ -256,7 +256,7 @@ const overlay = document.getElementById("overlay");
       button.addEventListener("click", function() {
         // Determine which button was clicked and show the popup accordingly
         const trigger = button.getAttribute("data-popup-trigger");
-        if (trigger === "donate" || trigger === "cover-page" || trigger === "navbar") {
+        if (trigger === "cover-page" || trigger === "navbar") {
           popup.style.display = "block";
           overlay.style.display = "block";
         }
