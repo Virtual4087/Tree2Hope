@@ -864,4 +864,21 @@ nav .nav_buttons {
   font-weight: 700;
 }
 
+.about-container {
+  /* Background combining linear and radial gradients */
+  background: radial-gradient(
+    circle at top left,
+    /* Fully transparent at top-left corner */ rgba(245, 245, 220, 0) 0%,
+    /* Slight transparency moving away */ rgba(245, 245, 220, 0.2) 15%,
+    /* Fully opaque */ rgba(245, 245, 220, 1) 30%
+  );
+
+  /* Blur effect */
+  backdrop-filter: blur(15px);
+}
+
+.about-container div {
+  background-color: transparent;
+}
+
 /* You can further style the .content-box class as needed */
