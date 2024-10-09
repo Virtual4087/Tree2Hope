@@ -1,517 +1,516 @@
 /*........................... Responsivness...........................*/
 @media only screen and (min-width: 650px) and (max-width: 900px) {
-    .upper_part .links a {
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        font-family: "Poppins", sans-serif;
-        color: rgb(160, 160, 160);
-        font-size: 12px;
-        position: relative;
-        transition: 0.2s;
-    }
+  .upper_part .links a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+    position: relative;
+    transition: 0.2s;
+  }
 
-    .upper_part .links a:hover {
-        color: white;
-    }
+  .upper_part .links a:hover {
+    color: white;
+  }
 
-    .upper_part {
-        padding-bottom: 1rem;
-    }
+  .upper_part {
+    padding-bottom: 1rem;
+  }
 
-    .links {
-        display: flex;
-        gap: 2rem;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 160vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+  .links {
+    display: flex;
+    gap: 2rem;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 160vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 650px) {
-    .upper_part .links a {
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        font-family: "Poppins", sans-serif;
-        color: rgb(160, 160, 160);
-        font-size: 8px;
-        position: relative;
-        transition: 0.2s;
-    }
+  .upper_part .links a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(160, 160, 160);
+    font-size: 8px;
+    position: relative;
+    transition: 0.2s;
+  }
 
-    .upper_part .links a:hover {
-        color: white;
-    }
+  .upper_part .links a:hover {
+    color: white;
+  }
 
-    .socialmediaName {
-        font-size: 8px;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 160vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+  .socialmediaName {
+    font-size: 8px;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 160vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 600px) {
-    .upper_part .links a {
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        font-family: "Poppins", sans-serif;
-        color: rgb(160, 160, 160);
-        font-size: 8px;
-        position: relative;
-        transition: 0.2s;
-    }
+  .upper_part .links a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(160, 160, 160);
+    font-size: 8px;
+    position: relative;
+    transition: 0.2s;
+  }
 
-    .upper_part .links a:hover {
-        color: white;
-    }
+  .upper_part .links a:hover {
+    color: white;
+  }
 
-    .socialmediaName {
-        font-size: 8px;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 160vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+  .socialmediaName {
+    font-size: 8px;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 160vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-    .upper_part .links a {
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        font-family: "Poppins", sans-serif;
-        color: rgb(160, 160, 160);
-        font-size: 10px;
-        position: relative;
-        transition: 0.2s;
-    }
+  .upper_part .links a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(160, 160, 160);
+    font-size: 10px;
+    position: relative;
+    transition: 0.2s;
+  }
 
-    .upper_part {
-        height: auto;
-    }
+  .upper_part {
+    height: auto;
+  }
 
-    .links {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        gap: 1.25rem;
-    }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 1.25rem;
+  }
 
-    .upper_part .links a:hover {
-        color: white;
-    }
+  .upper_part .links a:hover {
+    color: white;
+  }
 
-    .socialmediaTextWrapper {
-        display: none;
-    }
+  .socialmediaTextWrapper {
+    display: none;
+  }
 
-    .links .column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 7px;
-        width: 140px;
-    }
+  .links .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    width: 140px;
+  }
 
-    .footer {
-        background-color: #141414;
-        box-sizing: border-box;
-        border-top: 1px solid black;
-        color: rgb(160, 160, 160);
-        font-family: "Poppins", sans-serif;
-        width: 100%;
-        padding: 0.5rem 2rem;
+  .footer {
+    background-color: #141414;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    color: rgb(160, 160, 160);
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 0.5rem 2rem;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    .quickLinkTextWrapper {
-        display: flex;
-        /* justify-content: center; */
-        /* padding-left: 10rem; */
-        align-items: center;
-        /* gap: 3rem; */
-        width: 100%;
-    }
+  .quickLinkTextWrapper {
+    display: flex;
+    /* justify-content: center; */
+    /* padding-left: 10rem; */
+    align-items: center;
+    /* gap: 3rem; */
+    width: 100%;
+  }
 
-    .upper_part {
-        padding-bottom: 12px;
-    }
+  .upper_part {
+    padding-bottom: 12px;
+  }
 
-    
+  .social_medias {
+    padding-top: 20px;
+    gap: 20px;
+  }
 
-    .social_medias{
-        padding-top: 20px;
-        gap: 20px;
-    }
-
-    .imgWrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .imgWrapper i {
-        margin-right: 0px;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height:190vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+  .imgWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgWrapper i {
+    margin-right: 0px;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 190vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 440px) {
-    .socialmediaName{
-        font-size: 10px;
-    }
-    .social_medias{
-        gap: 20px;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 160vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+  .socialmediaName {
+    font-size: 10px;
+  }
+  .social_medias {
+    gap: 20px;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 160vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 399px) {
-    .upper_part .links a {
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        font-family: "Poppins", sans-serif;
-        color: rgb(160, 160, 160);
-        font-size: 15px;
-        position: relative;
-        transition: 0.2s;
-    }
+  .upper_part .links a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(160, 160, 160);
+    font-size: 15px;
+    position: relative;
+    transition: 0.2s;
+  }
 
-    .upper_part {
-        height: auto;
-    }
+  .upper_part {
+    height: auto;
+  }
 
-    .links {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        gap: 1.25rem;
-    }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 1.25rem;
+  }
 
-    .upper_part .links a:hover {
-        color: white;
-    }
+  .upper_part .links a:hover {
+    color: white;
+  }
 
-    .socialmediaTextWrapper {
-        display: none;
-    }
+  .socialmediaTextWrapper {
+    display: none;
+  }
 
-    .links .column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 7px;
-        width: 200px;
-    }
+  .links .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    width: 200px;
+  }
 
-    .footer {
-        background-color: #141414;
-        box-sizing: border-box;
-        border-top: 1px solid black;
-        color: rgb(160, 160, 160);
-        font-family: "Poppins", sans-serif;
-        width: 100%;
-        padding: 0.5rem 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .footer {
+    background-color: #141414;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    color: rgb(160, 160, 160);
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    .quickLinkTextWrapper {
-        display: flex;
-        /* justify-content: center; */
-        /* padding-left: 10rem; */
-        align-items: center;
-        /* gap: 3rem; */
-        width: 100%;
-    }
+  .quickLinkTextWrapper {
+    display: flex;
+    /* justify-content: center; */
+    /* padding-left: 10rem; */
+    align-items: center;
+    /* gap: 3rem; */
+    width: 100%;
+  }
 
-    .socialmediaName{
-        font-size: 10px;
-    }
+  .socialmediaName {
+    font-size: 10px;
+  }
 
-    .social_medias{
-        padding-top: 20px;
-        gap: 15px;
-    }
+  .social_medias {
+    padding-top: 20px;
+    gap: 15px;
+  }
 
-    .imgWrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .imgWrapper i {
-        margin-right: 0px;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 190vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+  .imgWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgWrapper i {
+    margin-right: 0px;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 190vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
 
 @media only screen and (min-width: 250px) and (max-width: 299px) {
-    .upper_part .links a {
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        font-family: "Poppins", sans-serif;
-        color: rgb(160, 160, 160);
-        font-size: 15px;
-        position: relative;
-        transition: 0.2s;
-    }
+  .upper_part .links a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(160, 160, 160);
+    font-size: 15px;
+    position: relative;
+    transition: 0.2s;
+  }
 
-    .upper_part {
-        height: auto;
-    }
+  .upper_part {
+    height: auto;
+  }
 
-    .links {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        gap: 1.25rem;
-    }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 1.25rem;
+  }
 
-    .upper_part .links a:hover {
-        color: white;
-    }
+  .upper_part .links a:hover {
+    color: white;
+  }
 
-    .upper_part {
-        padding-bottom: 12px;
-    }
+  .upper_part {
+    padding-bottom: 12px;
+  }
 
-    .socialmediaTextWrapper {
-        display: none;
-    }
+  .socialmediaTextWrapper {
+    display: none;
+  }
 
-    .links .column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 7px;
-        width: 200px;
-    }
+  .links .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    width: 200px;
+  }
 
-    .footer {
-        background-color: #141414;
-        box-sizing: border-box;
-        border-top: 1px solid black;
-        color: rgb(160, 160, 160);
-        font-family: "Poppins", sans-serif;
-        width: 100%;
-        padding: 0.5rem 2rem;
+  .footer {
+    background-color: #141414;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    color: rgb(160, 160, 160);
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 0.5rem 2rem;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    .quickLinkTextWrapper {
-        display: flex;
-        /* justify-content: center; */
-        /* padding-left: 10rem; */
-        align-items: center;
-        /* gap: 3rem; */
-        width: 100%;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 190vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+  .quickLinkTextWrapper {
+    display: flex;
+    /* justify-content: center; */
+    /* padding-left: 10rem; */
+    align-items: center;
+    /* gap: 3rem; */
+    width: 100%;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 190vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
 
 .MenuBar {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 1272px) {
-
-    nav .nav_buttons {
-        width: 45%;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 130vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+  nav .nav_buttons {
+    width: 45%;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 130vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 995px) {
-    #nav-text {
-        display: none;
-    }
+  #nav-text {
+    display: none;
+  }
 
-    .MenuBar {
-        display: contents;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 160vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+  .MenuBar {
+    display: contents;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 160vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 412px) {
-    .Video {
-        margin: 2em auto;
-        width: 100%;
-        height: 40vh;
-    }
+  .Video {
+    margin: 2em auto;
+    width: 100%;
+    height: 40vh;
+  }
+  .glass {
+    padding: 1rem; /* Less padding around About block content */
+  }
 }
 
 @media (max-width: 395px) {
-    .image_container {
-        padding: 0;
-    }
+  .image_container {
+    padding: 0;
+  }
 }
 
 @media (max-width: 377px) {
-    .image_container {
-        padding: 0;
-    }
-
+  .image_container {
+    padding: 0;
+  }
 }
 
 @media (max-width: 285px) {
-    .image_container {
-        padding: 0;
-    }
+  .image_container {
+    padding: 0;
+  }
 
-    .locations {
-        margin: 0;
-    }
+  .locations {
+    margin: 0;
+  }
 
-    .locations .country_images {
-        background-position: center;
-        background-size: cover;
-        width: 72%;
-    }
+  .locations .country_images {
+    background-position: center;
+    background-size: cover;
+    width: 72%;
+  }
 }
 
-@media (max-width: 375px){
-    .logo img{
-        width:130px;
-    }
-    .banner::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 190vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-          url("../images/child-hands-holding-caring-young-green-plant.webp");
-        background-size:cover;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        z-index: -1;
-    }
+@media (max-width: 375px) {
+  .logo img {
+    width: 130px;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 190vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+      url("../images/child-hands-holding-caring-young-green-plant.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 }
