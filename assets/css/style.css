@@ -119,7 +119,6 @@
 body {
   margin: 0px;
   padding: 0px;
-  padding-top: 440px;
   font-family: sans-serif;
   /* height: 600vh; */
   overflow-x: hidden;
@@ -243,6 +242,7 @@ nav .nav_buttons {
 }
 
 .body .text {
+  padding-top: 900px;
   color: white;
   font-size: 18px;
 
@@ -256,6 +256,7 @@ nav .nav_buttons {
 }
 
 .body .page_buttons {
+  padding-top: 15px;
   display: flex;
   justify-content: space-between;
 }
