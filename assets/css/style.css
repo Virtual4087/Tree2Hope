@@ -78,7 +78,7 @@
 .menu-button {
   cursor: pointer;
   background: transparent;
-  color: rgb(82 80 80);
+  color: limegreen;
   /* text-align:; */
   display: block;
   justify-content: end;
