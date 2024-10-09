@@ -197,7 +197,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 160vh;
+        height:190vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
           url("../images/child-hands-holding-caring-young-green-plant.webp");
         background-size:cover;
@@ -316,7 +316,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 160vh;
+        height: 190vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
           url("../images/child-hands-holding-caring-young-green-plant.webp");
         background-size:cover;
@@ -397,7 +397,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 160vh;
+        height: 190vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
           url("../images/child-hands-holding-caring-young-green-plant.webp");
         background-size:cover;
@@ -415,6 +415,21 @@
 
     nav .nav_buttons {
         width: 45%;
+    }
+    .banner::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 130vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+          url("../images/child-hands-holding-caring-young-green-plant.webp");
+        background-size:cover;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        z-index: -1;
     }
 }
 
@@ -483,5 +498,20 @@
 @media (max-width: 375px){
     .logo img{
         width:130px;
+    }
+    .banner::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 190vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
+          url("../images/child-hands-holding-caring-young-green-plant.webp");
+        background-size:cover;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        z-index: -1;
     }
 }
