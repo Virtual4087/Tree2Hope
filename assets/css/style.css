@@ -119,6 +119,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  padding-top: 440px;
   font-family: sans-serif;
   /* height: 600vh; */
   overflow-x: hidden;
@@ -164,6 +165,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 8%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.829);
+  z-index: 10;
+  height: 90px;
 
   transition-property: background-color;
   transition-duration: 0.3s;
@@ -188,6 +195,7 @@ nav .nav_buttons {
   text-decoration: none;
   color: #bbbbbb;
   font-family: "Poppins", sans-serif;
+  font-weight: bolder;
   letter-spacing: 0.5px;
 
   display: flex;
