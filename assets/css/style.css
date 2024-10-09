@@ -868,18 +868,29 @@ nav .nav_buttons {
   /* Radial gradient background */
   background: radial-gradient(
     circle at top left,
-    /* Fully transparent at top-left corner */ rgba(245, 245, 220, 0) 0%,
-    /* Slight transparency moving away */ rgba(245, 245, 220, 0.2) 15%,
-    /* Fully opaque */ rgba(245, 245, 220, 1) 30%
+    /* Fully transparent at top-left corner */ rgba(36, 30, 30, 0) 0%,
+    rgba(36, 30, 30, 0.2) 15%,
+    rgba(36, 30, 30, 0.45) 30%,
+    /* Fully opaque */ rgba(36, 30, 30, 1) 55%,
+    rgba(36, 30, 30, 1) 100%
   );
 
   /* Blur effect */
   backdrop-filter: blur(15px);
 }
 
-/* Ensure the background is visible through child elements */
 .about-container div {
+  text-align: left;
+  /* Ensure the background is visible */
   background-color: transparent;
+  color: rgb(187, 187, 187);
+  font-weight: 300;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.about-container p:nth-of-type(2) {
+  font-weight: 600;
 }
 
 /* You can further style the .content-box class as needed */
