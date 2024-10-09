@@ -10,6 +10,21 @@
 
 /* Menu Bar */
 
+.glass-effect {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* Increase opacity for a more solid effect */
+  backdrop-filter: blur(15px); /* Increase blur to make it more pronounced */
+  -webkit-backdrop-filter: blur(15px); /* Safari support with increased blur */
+  border-radius: 15px; /* Keep rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow for more depth */
+  padding: 25px; /* Increase padding for spacing */
+  color: #fff; /* Keep text white for readability */
+}
+
 .menu-container {
   display: none;
   position: fixed;
@@ -80,7 +95,7 @@
 .menu-button {
   cursor: pointer;
   background: transparent;
-  color: #03A254;
+  color: #03a254;
   /* text-align:; */
   display: block;
   justify-content: end;
