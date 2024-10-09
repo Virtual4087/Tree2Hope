@@ -865,7 +865,7 @@ nav .nav_buttons {
 }
 
 .about-container {
-  /* Background combining linear and radial gradients */
+  /* Radial gradient background */
   background: radial-gradient(
     circle at top left,
     /* Fully transparent at top-left corner */ rgba(245, 245, 220, 0) 0%,
@@ -877,6 +877,7 @@ nav .nav_buttons {
   backdrop-filter: blur(15px);
 }
 
+/* Ensure the background is visible through child elements */
 .about-container div {
   background-color: transparent;
 }
