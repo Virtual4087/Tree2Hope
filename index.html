@@ -256,7 +256,7 @@ const overlay = document.getElementById("overlay");
       button.addEventListener("click", function() {
         // Determine which button was clicked and show the popup accordingly
         const trigger = button.getAttribute("data-popup-trigger");
-        if ((trigger === "donate" || trigger === "cover-page" || trigger === "navbar") {
+        if (trigger === "donate" || trigger === "cover-page" || trigger === "navbar") {
           popup.style.display = "block";
           overlay.style.display = "block";
         }
