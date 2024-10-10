@@ -184,10 +184,11 @@ nav .nav_buttons {
   margin: 0px;
 
   height: 100%;
-  width: 35%;
+  width: 30%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, fit-content(100px));
   position: relative;
+  gap: 70px;
 }
 
 .nav_buttons .nav_button {
