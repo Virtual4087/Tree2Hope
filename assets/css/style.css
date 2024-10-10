@@ -99,6 +99,7 @@
 
 /*  */
 .quickLinkTextWrapper {
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   /* padding-left: 10rem; */
@@ -487,7 +488,7 @@ nav .nav_buttons {
 }
 
 .Goals .images {
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.377);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -497,6 +498,13 @@ nav .nav_buttons {
   padding: 10px 5px;
   gap: 4%;
   font-size: 14px;
+  transition: 0.5s;
+}
+
+.images:hover{
+  background-color: #d5ff80;
+  scale: 1.05;
+  
 }
 
 .Goals .images img {
@@ -652,13 +660,15 @@ nav .nav_buttons {
   justify-content: space-evenly;
   margin: 0 10%;
   height: auto;
+  padding-bottom: 1rem;
 }
 
 .quick-links,
 .socialmediaTxt {
   font-family: "Poppins", sans-serif;
-  color: green;
+  color: rgb(55, 206, 55);
   letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .upper_part .links a {
@@ -726,7 +736,7 @@ nav .nav_buttons {
 
 .copyright-disclaimer {
   font-size: 14px;
-  color: rgba(128, 128, 128, 0.643);
+  color: white;
   padding-top: 1rem;
   text-align: center;
   margin: auto;
@@ -757,6 +767,7 @@ nav .nav_buttons {
   flex-direction: row;
   gap: 20px;
   margin: auto;
+  padding-top: 0.5rem;
 }
 
 .lower_part .rights_reserved {
