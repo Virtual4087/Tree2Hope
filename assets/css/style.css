@@ -99,6 +99,7 @@
 
 /*  */
 .quickLinkTextWrapper {
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   /* padding-left: 10rem; */
@@ -669,6 +670,7 @@ nav .nav_buttons {
   font-family: "Poppins", sans-serif;
   color: green;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .upper_part .links a {
@@ -736,7 +738,7 @@ nav .nav_buttons {
 
 .copyright-disclaimer {
   font-size: 14px;
-  color: rgba(128, 128, 128, 0.643);
+  color: white;
   padding-top: 1rem;
   text-align: center;
   margin: auto;
@@ -767,6 +769,7 @@ nav .nav_buttons {
   flex-direction: row;
   gap: 20px;
   margin: auto;
+  padding-top: 0.5rem;
 }
 
 .lower_part .rights_reserved {
