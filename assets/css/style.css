@@ -80,7 +80,7 @@
 .menu-button {
   cursor: pointer;
   background: transparent;
-  color: #03A254;
+  color: #03a254;
   /* text-align:; */
   display: block;
   justify-content: end;
@@ -880,27 +880,23 @@ nav .nav_buttons {
 
 .glass {
   background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    border-radius: 15px; /* Rounded corners */
-    padding: 2rem; /* Padding around content */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    backdrop-filter: blur(10px); /* Blur effect */
-    /* border: 1px solid rgba(255, 255, 255, 0.2); Border with semi-transparent white */
-    text-align: center; /* Center align text */
-    color: #000; /* Text color */
+  border-radius: 15px; /* Rounded corners */
+  padding: 2rem; /* Padding around content */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  backdrop-filter: blur(10px); /* Blur effect */
+  /* border: 1px solid rgba(255, 255, 255, 0.2); Border with semi-transparent white */
+  text-align: center; /* Center align text */
+  color: #000; /* Text color */
 }
 
-.about-image {
-  color: rgb(75, 73, 73);
-  background-color: #f5f5dc; /*Beige color */
-  padding: 1em;
-  border-radius: 10px;
-  font-weight: 700;
+.glass div {
+  text-align: left;
+  color: rgb(187, 187, 187);
+  font-weight: 300;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.about-text {
-  color: rgb(75, 73, 73);
-  background-color: #f5f5dc; /*Beige color */
-  padding: 1em;
-  border-radius: 10px;
-  font-weight: 700;
+.glass h2 {
+  font-family: "Poppins", sans-serif;
 }
