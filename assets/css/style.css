@@ -158,7 +158,6 @@ html {
   background-attachment: fixed;
   z-index: -1;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -167,12 +166,22 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.829);
   z-index: 10;
   height: 90px;
-
   transition-property: background-color;
   transition-duration: 0.3s;
+}
+
+/* Transparent Navbar (initial state) */
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0); /* Adjust transparency */
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar becomes dark when scrolled */
+.navbar-dark {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease;
 }
 
 nav .logo img {
@@ -182,7 +191,6 @@ nav .logo img {
 nav .nav_buttons {
   padding: 0px;
   margin: 0px;
-
   height: 100%;
   width: 35%;
   display: grid;
@@ -196,14 +204,11 @@ nav .nav_buttons {
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   letter-spacing: 0.5px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-size: 14px;
   cursor: pointer;
-
   transition-duration: 0.3s;
   position: relative;
   text-wrap: nowrap;
@@ -214,10 +219,8 @@ nav .nav_buttons {
   position: absolute;
   bottom: 30%;
   left: 15%;
-
   height: 2px;
   width: 0;
-
   background-color: rgb(51, 175, 20);
   border-radius: 20px;
   transition: 0.3s;

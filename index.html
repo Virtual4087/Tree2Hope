@@ -244,7 +244,38 @@
   </div>
 </body>
 <script>
-  const showPopupButtons = document.querySelectorAll(".showPopupButton");
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('nav');
+    const whereWePlantSection = document.querySelector('.locations.section.mt-5'); // Updated class selector
+  
+    if (!navbar || !whereWePlantSection) {
+      console.error('Required elements not found');
+      return; // Exit if elements don't exist
+    }
+  
+    // Function to check scroll position and toggle navbar background
+    function handleScroll() {
+      const sectionTop = whereWePlantSection.offsetTop - navbar.offsetHeight;
+      const scrollPosition = window.scrollY;
+  
+      if (scrollPosition >= sectionTop) {
+        navbar.classList.add('navbar-dark');
+        navbar.classList.remove('navbar-transparent');
+      } else {
+        navbar.classList.add('navbar-transparent');
+        navbar.classList.remove('navbar-dark');
+      }
+    }
+  
+    // Initial state: Make the navbar transparent when the page loads
+    navbar.classList.add('navbar-transparent');
+  
+    // Listen to scroll events to handle the navbar background change
+    window.addEventListener('scroll', handleScroll);
+  });
+
+const showPopupButtons = document.querySelectorAll(".showPopupButton");
 const closePopupButton = document.querySelector(".closePopupButton");
 const popup = document.querySelector(".popup");
 const overlay = document.getElementById("overlay");
