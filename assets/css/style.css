@@ -165,6 +165,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 8%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.829);
+  z-index: 10;
+  height: 90px;
 
   transition-property: background-color;
   transition-duration: 0.3s;
@@ -179,16 +185,18 @@ nav .nav_buttons {
   margin: 0px;
 
   height: 100%;
-  width: 35%;
+  width: 30%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, fit-content(100px));
   position: relative;
+  gap: 70px;
 }
 
 .nav_buttons .nav_button {
   text-decoration: none;
   color: #bbbbbb;
   font-family: "Poppins", sans-serif;
+  font-weight: bolder;
   letter-spacing: 0.5px;
 
   display: flex;
@@ -236,6 +244,7 @@ nav .nav_buttons {
 }
 
 .body .text {
+  padding-top: 900px;
   color: white;
   font-size: 18px;
 
@@ -249,6 +258,7 @@ nav .nav_buttons {
 }
 
 .body .page_buttons {
+  padding-top: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -774,7 +784,7 @@ nav .nav_buttons {
   display: flex;
   align-items: center;
   height: 32px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: transform 0.75s ease-in-out;
 }
 
