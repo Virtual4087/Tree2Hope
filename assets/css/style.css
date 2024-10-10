@@ -501,12 +501,6 @@ nav .nav_buttons {
   transition: 0.5s;
 }
 
-.images:hover{
-  background-color: #d5ff80;
-  scale: 1.05;
-  
-}
-
 .Goals .images img {
   margin: 5% auto;
 }
