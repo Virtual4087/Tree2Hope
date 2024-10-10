@@ -164,6 +164,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 8%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.829);
+  z-index: 10;
+  height: 90px;
 
   transition-property: background-color;
   transition-duration: 0.3s;
@@ -188,6 +194,7 @@ nav .nav_buttons {
   text-decoration: none;
   color: #bbbbbb;
   font-family: "Poppins", sans-serif;
+  font-weight: bolder;
   letter-spacing: 0.5px;
 
   display: flex;
@@ -235,6 +242,7 @@ nav .nav_buttons {
 }
 
 .body .text {
+  padding-top: 900px;
   color: white;
   font-size: 18px;
 
@@ -248,6 +256,7 @@ nav .nav_buttons {
 }
 
 .body .page_buttons {
+  padding-top: 15px;
   display: flex;
   justify-content: space-between;
 }
