@@ -168,13 +168,17 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: transparent; /* Start as transparent */
   z-index: 10;
   height: 90px;
-
-  transition-property: background-color;
-  transition-duration: 0.3s;
+  transition: background-color 0.3s ease; 
 }
+
+/* Class to apply dark background */
+nav.dark {
+  background-color: rgba(0, 0, 0, 0.829); 
+}
+
 
 nav .logo img {
   cursor: pointer;

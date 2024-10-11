@@ -389,4 +389,27 @@
       document.getElementById("menuContainer").style.display = "none";
     }
   </script>
+
+
+<!-- functionality of the scroll effect for the navbar -->
+<script>
+  const nav = document.querySelector('nav');
+  const whereWePlantSection = document.querySelector('.locations');
+
+  // Function to add/remove dark background
+  function handleScroll() {
+    const sectionTop = whereWePlantSection.getBoundingClientRect().top;
+    const threshold = window.innerHeight * 0.1; 
+
+    if (sectionTop <= threshold) {
+      nav.classList.add('dark');
+    } else {
+      nav.classList.remove('dark');
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+</script>
+
+
 </html>
