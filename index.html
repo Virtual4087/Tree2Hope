@@ -31,41 +31,24 @@
   </head>
 
   <body>
-    <div class="banner section">
-      <nav>
-        <div class="logo">
-          <a href="#">
-            <img
-              src="./assets/images/4x/typography_logo.webp"
-              alt="Logo"
-              width="160px"
-            />
-          </a>
-        </div>
-        <div id="nav-text" class="nav_buttons">
-          <a href="#" class="nav_button">HOME</a>
-          <a href="#donates" class="nav_button showPopupButton">DONATE</a>
-          <a href="./about.html" class="nav_button">ABOUT US</a>
-          <a href="#footer" class="nav_button">CONTACT US</a>
-        </div>
+    <header class="header">
+      <a href="#">
+        <img
+          src="./assets/images/4x/typography_logo.webp"
+          alt="Logo"
+          width="160px"
+        />
+      </a>
+      <nav class="navbar">
+        <a href="#" class="nav_button">HOME</a>
+        <a href="#donates" class="nav_button showPopupButton">DONATE</a>
+        <a href="./about.html" class="nav_button">ABOUT US</a>
+        <a href="#footer" class="nav_button">CONTACT US</a>
       </nav>
-      <!-- Menu Bar -->
-      <div class="MenuBar">
-        <i id="openMenu" class="bx bx-menu menu-button"></i>
-
-        <div class="menu-container" id="menuContainer">
-          <div class="menu">
-            <span class="close-button" id="closeMenu">&times;</span>
-            <ul>
-              <li><a href="#" onclick="handleClose()">HOME</a></li>
-              <li><a href="#donates" onclick="handleClose()">DONATE</a></li>
-              <li><a href="./about.html" class="nav_button">ABOUT US</a></li>
-              <li><a href="#footer" onclick="handleClose()">CONTACT US</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!--  -->
+      <!--Burger Menu-->
+      <div class="bx bx-menu menu-button" id="burgerMenu"></div>
+    </header>
+    <div class="banner section">
       <div class="body">
         <div class="text">
           <span class="Big_Text">PLANTING TREES BUILDING HOPE</span><br /><br />
@@ -80,6 +63,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- <div class="trees_planted">
         <div class="number"><span>40535</span><br>TREES PLANTED<br><br></div>
@@ -345,6 +329,15 @@
     </div>
   </body>
   <script>
+    const burgerMenu = document.querySelector("#burgerMenu");
+    const navbar = document.querySelector(".navbar");
+    
+
+    burgerMenu.addEventListener("click", () => {
+      burgerMenu.classList.toggle('bx-x')
+      navbar.classList.toggle("active");
+    });
+
     const showPopupButtons = document.querySelectorAll(".showPopupButton");
     const closePopupButton = document.querySelector(".closePopupButton");
     const popup = document.querySelector(".popup");
