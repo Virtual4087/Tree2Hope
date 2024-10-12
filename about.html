@@ -37,57 +37,61 @@
   </head>
 
   <body>
-    <header class="header">
-      <a href="#">
-        <img
-          src="./assets/images/4x/typography_logo.webp"
-          alt="Logo"
-          width="160px"
-        />
-      </a>
-      <nav class="navbar">
-        <a href="./index.html" class="nav_button">HOME</a>
-        <a href="./index.html#donates" class="nav_button showPopupButton">DONATE</a>
-        <a href="./about.html" class="nav_button">ABOUT US</a>
-        <a href="./index.html#footer" class="nav_button">CONTACT US</a>
-      </nav>
-      <div class="bx bx-menu menu-button" id="burgerMenu"></div>
-    </header>
-    <div class="banner">
-    <div class="body">
-      <div class="container text">
-        <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center glass">
-          <div class="col-12 col-lg-6 col-xl-5">
+    <div class="banner section">
+      <nav>
+        <div class="logo">
+          <a class="footerLinks" href="./index.html">
             <img
-              class="img-fluid rounded"
-              loading="lazy"
-              src="./assets/images/School.webp"
-              alt="About 1"
-              >
-          </div>
-          <div class="col-12 col-lg-6 col-xl-7">
-            <div class="row justify-content-xl-center">
-              <div class="col-12 col-xl-11">
-                <h2 class="mb-4">Who Are We?</h2>
-                <p class="fs-6 mb-3">
-                  Tree2Hope is a purpose-driven initiative committed to
-                  fostering global reforestation efforts and championing
-                  environmental stewardship. Our platform enables
-                  eco-conscious individuals and businesses to actively
-                  participate in the restoration of our planet's green spaces.
-                </p>
-                <p class="fs-6 mb-3">
-                  For the low, low price of one dollar, you can choose a
-                  specific area in need of ecological attention and help fund
-                  the planting of a tree there, having an immediate and
-                  tangible effect on the world around you.
-                </p>
-                <p class="fs-6 mb-3">
-                  Join us in our mission to create a sustainable and
-                  flourishing ecosystem that supports biodiversity and
-                  mitigates the effects of climate change for a brighter,
-                  greener future.
-                </p>
+              src="./assets/images/4x/typography_logo.webp"
+              alt="Logo"
+              width="160px"
+            />
+          </a>
+        </div>
+        <div id="nav-text" class="nav_buttons">
+          <a href="./index.html" class="nav_button">HOME</a>
+          <a href="./index.html#donates" class="nav_button showPopupButton">DONATE</a>
+          <a href="./about.html" class="nav_button">ABOUT US</a>
+          <a href="./index.html#footer" class="nav_button">CONTACT US</a>
+        </div>
+      </nav>
+      <!-- Menu Bar -->
+
+      <!--  -->
+      <div class="body">
+        <div class="container text">
+          <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center glass">
+            <div class="col-12 col-lg-6 col-xl-5">
+              <img
+                class="img-fluid rounded"
+                loading="lazy"
+                src="./assets/images/School.webp"
+                alt="About 1"
+              />
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7">
+              <div class="row justify-content-xl-center">
+                <div class="col-12 col-xl-11">
+                  <h2 class="mb-4">Who Are We?</h2>
+                  <p class="fs-6 mb-3">
+                    Tree2Hope is a purpose-driven initiative committed to
+                    fostering global reforestation efforts and championing
+                    environmental stewardship. Our platform enables
+                    eco-conscious individuals and businesses to actively
+                    participate in the restoration of our planet's green spaces.
+                  </p>
+                  <p class="fs-6 mb-3">
+                    For the low, low price of one dollar, you can choose a
+                    specific area in need of ecological attention and help fund
+                    the planting of a tree there, having an immediate and
+                    tangible effect on the world around you.
+                  </p>
+                  <p class="fs-6 mb-3">
+                    Join us in our mission to create a sustainable and
+                    flourishing ecosystem that supports biodiversity and
+                    mitigates the effects of climate change for a brighter,
+                    greener future.
+                  </p>
                   <!-- <div class="row gy-4 gy-md-0 gx-xxl-5X">
                     <div class="col-12 col-md-6">
                       <div class="d-flex">
@@ -144,7 +148,6 @@
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
@@ -258,15 +261,6 @@
     </div>
   </body>
   <script>
-    const burgerMenu = document.querySelector("#burgerMenu");
-    const navbar = document.querySelector(".navbar");
-    
-
-    burgerMenu.addEventListener("click", () => {
-      burgerMenu.classList.toggle('bx-x')
-      navbar.classList.toggle("active");
-    });
-    
     const showPopupButtons = document.querySelectorAll(".showPopupButton");
     const closePopupButton = document.querySelector(".closePopupButton");
     const popup = document.querySelector(".popup");
