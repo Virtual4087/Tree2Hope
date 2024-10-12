@@ -79,7 +79,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: transparent; /* Start as transparent */
   z-index: 10;
   height: 90px;
   cursor: pointer;
@@ -93,18 +93,17 @@ header {
   position: relative;
   top: 5px;
   gap: 30px;
+  transition: background-color 0.3s ease; 
 }
 
-nav .navbar {
-  padding: 0px;
-  margin: 0px;
+/* Class to apply dark background */
+nav.dark {
+  background-color: rgba(0, 0, 0, 0.829); 
+}
 
-  height: 100%;
-  width: 30%;
-  display: grid;
-  grid-template-columns: repeat(4, fit-content(100px));
-  position: relative;
-  gap: 70px;
+
+nav .logo img {
+  cursor: pointer;
 }
 
 .navbar .nav_button {
