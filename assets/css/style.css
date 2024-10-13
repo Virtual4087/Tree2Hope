@@ -185,15 +185,13 @@ nav .logo img {
 }
 
 nav .nav_buttons {
+  display: flex;
+  justify-content: space-between;
   padding: 0px;
   margin: 0px;
-
   height: 100%;
-  width: 30%;
-  display: grid;
-  grid-template-columns: repeat(4, fit-content(100px));
+  width: 35%;
   position: relative;
-  gap: 70px;
 }
 
 .nav_buttons .nav_button {
