@@ -92,6 +92,9 @@
   .socialmediaName {
     font-size: 0.8rem;
   }
+  .imgWrapper a span{
+    display: none;
+  }
   .banner::before {
     content: "";
     position: absolute;
@@ -179,14 +182,8 @@
     gap: 20px;
   }
 
-  .imgWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .imgWrapper i {
-    margin-right: 0px;
+  .imgWrapper a span{
+    display: none;
   }
   .banner::before {
     content: "";
@@ -298,14 +295,8 @@
     gap: 15px;
   }
 
-  .imgWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .imgWrapper i {
-    margin-right: 0px;
+  .imgWrapper a span{
+    display: none;
   }
   .banner::before {
     content: "";
