@@ -1,4 +1,3 @@
-/*........................... Responsivness...........................*/
 @media only screen and (min-width: 650px) and (max-width: 900px) {
   .upper_part .links a {
     text-decoration: none;
@@ -22,21 +21,6 @@
     display: flex;
     gap: 2rem;
   }
-  .banner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 160vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-      url("../images/child-hands-holding-caring-young-green-plant.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    z-index: -1;
-  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 650px) {
@@ -56,21 +40,6 @@
 
   .socialmediaName {
     font-size: 8px;
-  }
-  .banner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 160vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-      url("../images/child-hands-holding-caring-young-green-plant.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    z-index: -1;
   }
 }
 
@@ -92,9 +61,11 @@
   .socialmediaName {
     font-size: 0.8rem;
   }
+
   .imgWrapper a span{
     display: none;
   }
+  
   .banner::before {
     content: "";
     position: absolute;
@@ -185,21 +156,6 @@
   .imgWrapper a span{
     display: none;
   }
-  .banner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 190vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-      url("../images/child-hands-holding-caring-young-green-plant.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    z-index: -1;
-  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 440px) {
@@ -208,21 +164,6 @@
   }
   .social_medias {
     gap: 20px;
-  }
-  .banner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 160vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-      url("../images/child-hands-holding-caring-young-green-plant.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    z-index: -1;
   }
 }
 
@@ -298,21 +239,6 @@
   .imgWrapper a span{
     display: none;
   }
-  .banner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 190vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-      url("../images/child-hands-holding-caring-young-green-plant.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    z-index: -1;
-  }
 }
 
 @media only screen and (min-width: 250px) and (max-width: 299px) {
@@ -379,21 +305,6 @@
     /* gap: 3rem; */
     width: 100%;
   }
-  .banner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 190vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-      url("../images/child-hands-holding-caring-young-green-plant.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    z-index: -1;
-  }
 }
 
 .MenuBar {
@@ -404,21 +315,6 @@
   nav .nav_buttons {
     width: 45%;
   }
-  .banner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 130vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-      url("../images/child-hands-holding-caring-young-green-plant.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    z-index: -1;
-  }
 }
 
 @media (max-width: 995px) {
@@ -428,21 +324,6 @@
 
   .MenuBar {
     display: contents;
-  }
-  .banner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 160vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-      url("../images/child-hands-holding-caring-young-green-plant.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    z-index: -1;
   }
 }
 
@@ -488,20 +369,5 @@
 @media (max-width: 375px) {
   .logo img {
     width: 130px;
-  }
-  .banner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 190vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
-      url("../images/child-hands-holding-caring-young-green-plant.webp");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    z-index: -1;
   }
 }
