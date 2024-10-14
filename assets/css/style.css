@@ -655,7 +655,6 @@ nav .nav_buttons {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  height: 250px;
   width: 100%;
   /* background-color: red; */
 }
@@ -664,7 +663,7 @@ nav .nav_buttons {
   flex: 1.5;
   display: flex;
   justify-content: space-evenly;
-  margin: 0 10%;
+  margin: 1.5rem 10%;
   height: auto;
 }
 
@@ -781,17 +780,15 @@ nav .nav_buttons {
   right: 35%;
 }
 
-.imgWrapper {
+.imgWrapper a {
   display: flex;
   align-items: center;
   height: 32px;
-  /* cursor: pointer; */
   transition: transform 0.75s ease-in-out;
 }
 
 .imgWrapper i {
   font-size: 20px;
-  color: rgb(160, 160, 160);
   margin-right: 10px;
 }
 
