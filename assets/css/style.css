@@ -142,6 +142,7 @@ html {
   height: 100vh;
   display: grid;
   grid-template-rows: 10% 1fr;
+  margin-bottom: 0;
 }
 
 .banner::before {
@@ -151,7 +152,7 @@ html {
   right: 0;
   top: 0;
   bottom: 0;
-  height: 110vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 29, 29, 0.6)),
     url("../images/child-hands-holding-caring-young-green-plant.webp");
   background-size: cover;
@@ -654,7 +655,6 @@ nav .nav_buttons {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  height: 250px;
   width: 100%;
   /* background-color: red; */
 }
@@ -663,7 +663,7 @@ nav .nav_buttons {
   flex: 1.5;
   display: flex;
   justify-content: space-evenly;
-  margin: 0 10%;
+  margin: 1.5rem 10%;
   height: auto;
 }
 
@@ -780,17 +780,15 @@ nav .nav_buttons {
   right: 35%;
 }
 
-.imgWrapper {
+.imgWrapper a {
   display: flex;
   align-items: center;
   height: 32px;
-  /* cursor: pointer; */
   transition: transform 0.75s ease-in-out;
 }
 
 .imgWrapper i {
   font-size: 20px;
-  color: rgb(160, 160, 160);
   margin-right: 10px;
 }
 
