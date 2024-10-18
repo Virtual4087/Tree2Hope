@@ -35,9 +35,8 @@
       document.getElementById("menuContainer").style.display = "none";
     });
 
-    // Ensure all elements with the class 'close' close the menu
-    document.querySelectorAll(".close").forEach((closeButton) => {
-      closeButton.addEventListener("click", function () {
+    document.querySelectorAll(".close").forEach((element) => {
+      element.addEventListener("click", function () {
         document.getElementById("menuContainer").style.display = "none";
       });
     });
@@ -46,8 +45,22 @@
       document.getElementById("menuContainer").style.display = "none";
     }
     
+    let mybutton = document.getElementById("scrollToTopBtn");
+    window.onscroll = function() {scrollFunction()};
 
-// functionality of the scroll effect for the navbar
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    mybutton.onclick = function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
   const nav = document.querySelector('nav');
   const whereWePlantSection = document.querySelector('.locations');
 
@@ -77,3 +90,4 @@
   }
 
   window.addEventListener('scroll', handleScroll);
+
