@@ -48,5 +48,3 @@ Tree2Hope is a website dedicated to promoting the planting of trees as a means o
  </a>
 </p>
 
-Feel free to include even more emojis or adjust the placement of emojis to your liking. Emojis can add a fun and engaging touch to your README.
-
