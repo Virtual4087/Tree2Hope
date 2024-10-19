@@ -13,8 +13,24 @@ body {
     top: 20px;
     left: 20px;
     position: absolute;
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Add padding for better spacing */
+    border-radius: 8px; /* Rounded corners */
     text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-family: "Arial", sans-serif; /* A more modern font */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Slightly larger font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
+
+.getback:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
 .container2 {
     max-width: 1200px;
     margin: 0 auto;
