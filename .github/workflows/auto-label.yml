@@ -19,7 +19,6 @@ jobs:
             const issueBody = issue.body ? issue.body.toLowerCase() : '';
             const issueTitle = issue.title.toLowerCase();
             
-            // Add gssoc label to all issues
             await github.rest.issues.addLabels({
               owner: context.repo.owner,
               repo: context.repo.repo,
