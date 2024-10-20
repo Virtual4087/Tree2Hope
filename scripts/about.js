@@ -26,6 +26,15 @@ closePopupButton.addEventListener("click", function () {
     overlay.style.display = "none";
 });
 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 const close = document.querySelectorAll(".navclose");
 document.getElementById("openMenu").addEventListener("click", function () {
     document.getElementById("menuContainer").style.display = "flex";
