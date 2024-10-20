@@ -53,7 +53,40 @@
         </div>
       </nav>
       <!-- Menu Bar -->
+      <div class="MenuBar">
+        <i id="openMenu" class="bx bx-menu menu-button"></i>
 
+        <div class="menu-container" id="menuContainer">
+            <div class="menu">
+                <span class="close-button" id="closeMenu">&times;</span>
+                <ul>
+                    <li>
+                        <a href="#" onclick="handleClose()">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#donates" onclick="handleClose()"
+                            >DONATE</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./about.html" class="nav_button"
+                            >ABOUT US</a
+                        >
+                    </li>
+                    <li>
+                        <a href="contact.html" onclick="handleClose()"
+                            >CONTACT US</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#events" onclick="handleClose()"
+                            >EVENTS</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
       <!--  -->
       <div class="body">
         <div class="container text">
@@ -183,7 +216,7 @@
           <div class="column">
             <a class="footerLinks" href="#">ABOUT US</a>
             <a class="footerLinks" href="#">FAQS</a>
-            <a class="footerLinks" href="#">CONTACT US</a>
+            <a class="footerLinks" href="./contact.html">CONTACT US</a>
             <a class="footerLinks" href="#">CAREERS</a>
           </div>
         </div>
