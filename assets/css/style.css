@@ -8,6 +8,27 @@
     scroll-behavior: smooth;
 }
 
+/* progress bar: fixed position (always stay at the bottom) */
+.header {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+  }
 /*scroll to top button*/
 #scrollToTopBtn {
     display: none;
