@@ -40,7 +40,7 @@
     background: transparent;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    z-index: 2;
+    z-index: 13;
     align-items: center;
     justify-content: center;
     display: none;
@@ -110,7 +110,7 @@
     position: fixed;
     top: 10px;
     right: 10px;
-    z-index: 1;
+    z-index: 12;
 }
 
 .menu-button:hover {
