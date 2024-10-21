@@ -1,35 +1,41 @@
-name: Auto Label Issue
+name: Auto Label Issues and PRs
 
 on:
   issues:
     types: [opened, reopened, edited]
+  pull_request:
+    types: [opened]
 
 jobs:
-  label_issue:
+  label_issue_pr:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+      pull-requests: write
     steps:
-      - name: Label Issue
+      - name: Label Issues or PRs
         uses: actions/github-script@v6
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const issue = context.payload.issue;
-            const issueBody = issue.body ? issue.body.toLowerCase() : '';
-            const issueTitle = issue.title.toLowerCase();
+            const { issue, pull_request } = context.payload;
             
-            await github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue.number,
-              labels: ['hacktoberfest-accepted','hacktoberfest']
-            });
-            const addLabel = async (label) => {
+            if (issue) {
+              // Label issues when opened, reopened, or edited
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                labels: [label]
+                labels: ['hacktoberfest-accepted', 'hacktoberfest']
               });
-            };
+            } 
+            
+            if (pull_request) {
+              // Label pull requests when opened
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pull_request.number,
+                labels: ['hacktoberfest-accepted', 'hacktoberfest']
+              });
+            }
