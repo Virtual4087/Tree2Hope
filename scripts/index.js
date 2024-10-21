@@ -1,4 +1,5 @@
-    const showPopupButtons = document.querySelectorAll(".showPopupButton");
+    // const showPopupButtons = document.querySelectorAll(".showPopupButton");
+    const plant= document.getElementById('plant');
     const closePopupButton = document.querySelector(".closePopupButton");
     const popup = document.querySelector(".popup");
     const overlay = document.getElementById("overlay");
@@ -6,25 +7,31 @@
     //   popup.style.display = "block";
     //   overlay.style.display = "block";
     // });
-    showPopupButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        // Determine which button was clicked and show the popup accordingly
-        const trigger = button.getAttribute("data-popup-trigger");
-        if (
-          trigger === "donate" ||
-          trigger === "cover-page" ||
-          trigger === "navbar"
-        ) {
-          popup.style.display = "block";
-          overlay.style.display = "block";
-        }
-      });
-    });
+    // showPopupButtons.forEach((button) => {
+    //   button.addEventListener("click", function () {
+    //     // Determine which button was clicked and show the popup accordingly
+    //     const trigger = button.getAttribute("data-popup-trigger");
+    //     if (
+    //       trigger === "donate" ||
+    //       trigger === "cover-page" ||
+    //       trigger === "navbar"
+    //     ) {
+    //       popup.style.display = "block";
+    //       overlay.style.display = "block";
+    //     }
+    //   });
+    // });
 
-    closePopupButton.addEventListener("click", function () {
-      popup.style.display = "none";
-      overlay.style.display = "none";
-    });
+    // closePopupButton.addEventListener("click", function () {
+    //   popup.style.display = "none";
+    //   overlay.style.display = "none";
+    // });
+
+
+
+    plant.addEventListener("click",function(){
+      window.location.href="/Tree2Hope/planttree.html";
+    })
 
   
     document.getElementById("openMenu").addEventListener("click", function () {
@@ -90,4 +97,6 @@
   }
 
   window.addEventListener('scroll', handleScroll);
+
+
 
