@@ -287,10 +287,10 @@ nav .nav_buttons {
 }
 
 .body .text {
-    padding-top: 900px;
+    padding-top: 800px;
     color: white;
     font-size: 18px;
-
+      
     text-align: center;
 }
 
@@ -317,7 +317,7 @@ nav .nav_buttons {
     cursor: pointer;
 
     padding: 15px 25px;
-    margin: 10px;
+    margin: 0px;
 
     border: 1px solid var(--color_1);
 
@@ -600,28 +600,49 @@ nav .nav_buttons {
 }
 
 .get_involved .Option:hover {
-    background-color: rgba(149, 165, 166, 0.1);
+    background-color: rgba(149, 165, 166, 0.94);
     transform: scale(1.02);
     color: lightgreen;
 }
+
+
 
 .get_involved #_1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("../images/Individual.webp");
     background-size: cover;
+    transition:0.4s ;
 }
 
 .get_involved #_2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("../images/Businesses.webp");
     background-size: cover;
+    transition:0.4s ;
 }
 
 .get_involved #_3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("../images/School.webp");
     background-size: cover;
+    transition:0.4s ;
 }
+.get_involved #_1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.472), rgba(0, 0, 0, 0.529)),
+    url("../images/Individual.webp");
+background-size: cover;
+}
+.get_involved #_2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.472), rgba(0, 0, 0, 0.529)),
+    url("../images/Businesses.webp");
+background-size: cover;
+}
+.get_involved #_3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.472), rgba(0, 0, 0, 0.529)),
+    url("../images/School.webp");
+background-size: cover;
+}
+
 
 .Donate {
     /* height: 60vh; */
