@@ -1,304 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Tree2Hope</title>
 
     <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="icon" type="image/x-icon" href="./assets/images/4x/logo.webp" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsiveness.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="header">
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+    <div class="banner section">
+        <nav>
+            <div class="logo">
+                <a class="footerLinks" href="./index.html">
+                    <img src="./assets/images/4x/typography_logo.webp" alt="Logo" width="160px" />
+                </a>
+            </div>
+            <div id="nav-text" class="nav_buttons">
+                <a href="./index.html" class="nav_button">HOME</a>
+                <a href="./index.html#donates" class="nav_button showPopupButton">DONATE</a>
+                <a href="./about.html" class="nav_button">ABOUT US</a>
+                <a href="./index.html#footer" class="nav_button">CONTACT US</a>
+                <a href="./index.html#events" class="nav_button">EVENTS</a>
+            </div>
+        </nav>
+        <!-- Menu Bar -->
+        <div class="MenuBar">
+            <i id="openMenu" class="bx bx-menu menu-button"></i>
+
+            <div class="menu-container" id="menuContainer">
+                <div class="menu">
+                    <span class="close-button" id="closeMenu">&times;</span>
+                    <ul>
+                        <li>
+                            <a href="#" onclick="handleClose()">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#donates" onclick="handleClose()">DONATE</a>
+                        </li>
+                        <li>
+                            <a href="./about.html" class="nav_button">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" onclick="handleClose()">CONTACT US</a>
+                        </li>
+                        <li>
+                            <a href="#events" onclick="handleClose()">EVENTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="about-section" style="margin-top: 80px; margin-bottom: 40px;">
+            <div class="left-panel">
+                <div class="about-image" style="background-color: #FF5361;">
+                    <img style="width: 100%; height: 100%;" src="./assets/images/School.webp" alt="">
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="content">
+                    <div class="top-section">
+                        <h1>About Us</h1>
+                    </div>
+                    <div class="bottom-section"
+                        style="padding:2px; margin-top: 10px; text-align: justify; font-size: 19px;">
+                        <hr style="background-color:#FF5361; height: 4px; border: 0; position: relative; bottom: 10px;">
+                        <p class="fs-6 mb-3">
+                            Tree2Hope is a purpose-driven initiative committed to
+                            fostering global reforestation efforts and championing
+                            environmental stewardship. Our platform enables
+                            eco-conscious individuals and businesses to actively
+                            participate in the restoration of our planet's green spaces.
+                        </p>
+                        <p class="fs-6 mb-3">
+                            For the low, low price of one dollar, you can choose a
+                            specific area in need of ecological attention and help fund
+                            the planting of a tree there, having an immediate and
+                            tangible effect on the world around you.
+                        </p>
+                        <p class="fs-6 mb-3">
+                            Join us in our mission to create a sustainable and
+                            flourishing ecosystem that supports biodiversity and
+                            mitigates the effects of climate change for a brighter,
+                            greener future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <div style="margin-bottom: 10000px;"></div>
     </div>
     
-    <div class="banner section">
-      <nav>
-        <div class="logo">
-          <a class="footerLinks" href="./index.html">
-            <img
-              src="./assets/images/4x/typography_logo.webp"
-              alt="Logo"
-              width="160px"
-            />
-          </a>
-        </div>
-        <div id="nav-text" class="nav_buttons">
-          <a href="./index.html" class="nav_button">HOME</a>
-          <a href="./index.html#donates" class="nav_button showPopupButton"
-            >DONATE</a
-          >
-          <a href="./about.html" class="nav_button">ABOUT US</a>
-          <a href="./index.html#footer" class="nav_button">CONTACT US</a>
-          <a href="./index.html#events" class="nav_button">EVENTS</a>
-        </div>
-      </nav>
-      <!-- Menu Bar -->
-      <div class="MenuBar">
-        <i id="openMenu" class="bx bx-menu menu-button"></i>
+    <div class="footer" id="footer" style="margin-top: 0;">
+        <div class="upper_part">
+            <div class="upperHeading">
+                <div class="quickLinkTextWrapper">
+                    <!-- <div class="qLine"></div> -->
 
-        <div class="menu-container" id="menuContainer">
-            <div class="menu">
-                <span class="close-button" id="closeMenu">&times;</span>
-                <ul>
-                    <li>
-                        <a href="#" onclick="handleClose()">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#donates" onclick="handleClose()"
-                            >DONATE</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./about.html" class="nav_button"
-                            >ABOUT US</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./contact.html" onclick="handleClose()"
-                            >CONTACT US</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#events" onclick="handleClose()"
-                            >EVENTS</a
-                        >
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </div>
-      <!--  -->
-      <div class="body">
-        <div class="container text">
-          <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center glass">
-            <div class="col-12 col-lg-6 col-xl-5">
-              <img
-                class="img-fluid rounded"
-                loading="lazy"
-                src="./assets/images/School.webp"
-                alt="About 1"
-              />
-            </div>
-            <div class="col-12 col-lg-6 col-xl-7">
-              <div class="row justify-content-xl-center">
-                <div class="col-12 col-xl-11">
-                  <h2 class="mb-4">Who Are We?</h2>
-                  <p class="fs-6 mb-3">
-                    Tree2Hope is a purpose-driven initiative committed to
-                    fostering global reforestation efforts and championing
-                    environmental stewardship. Our platform enables
-                    eco-conscious individuals and businesses to actively
-                    participate in the restoration of our planet's green spaces.
-                  </p>
-                  <p class="fs-6 mb-3">
-                    For the low, low price of one dollar, you can choose a
-                    specific area in need of ecological attention and help fund
-                    the planting of a tree there, having an immediate and
-                    tangible effect on the world around you.
-                  </p>
-                  <p class="fs-6 mb-3">
-                    Join us in our mission to create a sustainable and
-                    flourishing ecosystem that supports biodiversity and
-                    mitigates the effects of climate change for a brighter,
-                    greener future.
-                  </p>
-                  <!-- <div class="row gy-4 gy-md-0 gx-xxl-5X">
-                    <div class="col-12 col-md-6">
-                      <div class="d-flex">
-                        <div class="me-4 text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            fill="currentColor"
-                            class="bi bi-gear-fill"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h2 class="h4 mb-3">Versatile Brand</h2>
-                          <p class="text-secondary mb-0">
-                            We are crafting a digital method that subsists life
-                            across all mediums.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <div class="d-flex">
-                        <div class="me-4 text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            fill="currentColor"
-                            class="bi bi-fire"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h2 class="h4 mb-3">Digital Agency</h2>
-                          <p class="text-secondary mb-0">
-                            We believe in innovation by merging primary with
-                            elaborate ideas.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
+                    <h2 class="quick-links">Quick Links</h2>
+                    <!-- <div class="qLine"></div> -->
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- <div class="trees_planted">
-        <div class="number"><span>40535</span><br>TREES PLANTED<br><br></div>
-        <div class="text"><br>We plant trees on your behalf. $1 = 1 Tree Planted.<br>Plant a Tree, Restore Biodiversity, and Transform Our Planet.</div>
-    </div> -->
+            <div class="links">
+                <div class="column">
+                    <a class="footerLinks" href="#">HOW TO DONATE</a>
+                    <a class="footerLinks" href="#">PRIVACY POLICY</a>
+                    <a class="footerLinks" href="#">REFUND POLICY</a>
+                    <a class="footerLinks" href="#">TERMS OF SERVICES</a>
+                </div>
 
-    <div class="footer" id="footer">
-      <div class="upper_part">
-        <div class="upperHeading">
-          <div class="quickLinkTextWrapper">
-            <!-- <div class="qLine"></div> -->
+                <div class="column">
+                    <a class="footerLinks" href="#">OUR PARTNERS</a>
+                    <a class="footerLinks" href="#">BECOME AN AFFILIATE</a>
+                    <a class="footerLinks" href="#">SPONSOR US</a>
+                    <a class="footerLinks" href="#">REPORT A PROBLEM</a>
+                </div>
 
-            <h2 class="quick-links">Quick Links</h2>
-            <!-- <div class="qLine"></div> -->
-          </div>
+                <div class="column">
+                    <a class="footerLinks" href="#">ABOUT US</a>
+                    <a class="footerLinks" href="#">FAQS</a>
+                    <a class="footerLinks" href="./contact.html">CONTACT US</a>
+                    <a class="footerLinks" href="#">CAREERS</a>
+                </div>
+            </div>
         </div>
-
-        <div class="links">
-          <div class="column">
-            <a class="footerLinks" href="#">HOW TO DONATE</a>
-            <a class="footerLinks" href="#">PRIVACY POLICY</a>
-            <a class="footerLinks" href="#">REFUND POLICY</a>
-            <a class="footerLinks" href="#">TERMS OF SERVICES</a>
-          </div>
-
-          <div class="column">
-            <a class="footerLinks" href="#">OUR PARTNERS</a>
-            <a class="footerLinks" href="#">BECOME AN AFFILIATE</a>
-            <a class="footerLinks" href="#">SPONSOR US</a>
-            <a class="footerLinks" href="#">REPORT A PROBLEM</a>
-          </div>
-
-          <div class="column">
-            <a class="footerLinks" href="#">ABOUT US</a>
-            <a class="footerLinks" href="#">FAQS</a>
-            <a class="footerLinks" href="./contact.html">CONTACT US</a>
-            <a class="footerLinks" href="#">CAREERS</a>
-          </div>
+        <div class="footer-line"></div>
+        <div class="social_medias">
+            <div class="imgWrapper">
+                <a href="https://twitter.com" class="socialmediaName" target="_blank"><i
+                        class="fa-brands fa-x-twitter"></i> <span>TWITTER</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://www.facebook.com" class="socialmediaName" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>FACEBOOK</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://www.instagram.com" class="socialmediaName" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>INSTAGRAM</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://www.youtube.com" class="socialmediaName" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>YOUTUBE</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://www.linkedin.com" class="socialmediaName" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LINKEDIN</span></a>
+            </div>
+            <div class="imgWrapper">
+                <a href="https://github.com/Virtual4087/Tree2Hope" class="socialmediaName" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GITHUB</span></a>
+            </div>
         </div>
-      </div>
-      <div class="footer-line"></div>
-      <div class="social_medias">
-        <div class="imgWrapper">
-          <a href="https://twitter.com" class="socialmediaName" target="_blank"
-            ><i class="fa-brands fa-x-twitter"></i> <span>TWITTER</span></a
-          >
+        <div class="lower_part">
+            <div class="copyright-disclaimer">
+                ©2023 - Tree2Hope All rights reserved
+            </div>
         </div>
-        <div class="imgWrapper">
-          <a
-            href="https://www.facebook.com"
-            class="socialmediaName"
-            target="_blank"
-          >
-            <i class="fa-brands fa-facebook"></i>
-            <span>FACEBOOK</span></a
-          >
-        </div>
-        <div class="imgWrapper">
-          <a
-            href="https://www.instagram.com"
-            class="socialmediaName"
-            target="_blank"
-          >
-            <i class="fa-brands fa-instagram"></i>
-            <span>INSTAGRAM</span></a
-          >
-        </div>
-        <div class="imgWrapper">
-          <a
-            href="https://www.youtube.com"
-            class="socialmediaName"
-            target="_blank"
-          >
-            <i class="fa-brands fa-youtube"></i>
-            <span>YOUTUBE</span></a
-          >
-        </div>
-        <div class="imgWrapper">
-          <a
-            href="https://www.linkedin.com"
-            class="socialmediaName"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-            <span>LINKEDIN</span></a
-          >
-        </div>
-        <div class="imgWrapper">
-          <a
-            href="https://github.com/Virtual4087/Tree2Hope"
-            class="socialmediaName"
-            target="_blank"
-          >
-            <i class="fa-brands fa-github"></i>
-            <span>GITHUB</span></a
-          >
-        </div>
-      </div>
-      <div class="lower_part">
-        <div class="copyright-disclaimer">
-          ©2023 - Tree2Hope All rights reserved
-        </div>
-      </div>
     </div>
     <div id="overlay" class="hidden"></div>
 
     <div class="hidden popup">
-      <div class="popup-content">
-        <p>We haven't added this feature yet.</p>
-        <button class="closePopupButton">Close</button>
-      </div>
+        <div class="popup-content">
+            <p>We haven't added this feature yet.</p>
+            <button class="closePopupButton">Close</button>
+        </div>
     </div>
     <script src="./scripts/about.js"></script>
-  </body>
+</body>
+
 </html>

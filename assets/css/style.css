@@ -980,3 +980,85 @@ nav .nav_buttons {
     height: auto; /* Maintain aspect ratio */
     animation: pulse 1.5s infinite; /* Add animation */
 }
+
+/* About Section Styles */
+.about-section {
+    padding: 30px 70px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-image{
+    width: 80%;
+    height: 80%;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* Styling for the about-section */
+.about-section {
+    height: 81vh;
+    display: flex;
+}
+
+.about-section .left-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .right-panel {
+    flex: 1;
+    /* background-color: crimson; */
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .right-panel .content {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100%;
+}
+
+.about-section .right-panel .content .top-section {
+    text-align: left;
+    font-size: 25px;
+}
+
+.about-section .right-panel .content .bottom-section {
+    padding:2px; 
+    margin-top: 10px; 
+    text-align: justify; 
+    font-size: 19px;
+}
+.about-section .right-panel .content .bottom-section p{
+    margin-top: 10px;
+}
