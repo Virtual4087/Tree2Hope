@@ -15,21 +15,21 @@
     z-index: 1;
     width: 100%;
     background-color: #f1f1f1;
-}
-
-.progress-container {
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
     width: 100%;
     height: 8px;
     background: #ccc;
-}
-
-.progress-bar {
+  }
+  
+  .progress-bar {
     height: 8px;
     background: #04AA6D;
     width: 0%;
-}
-
-/* Scroll to top button */
+  }
+/*scroll to top button*/
 #scrollToTopBtn {
     display: none;
     position: fixed;
@@ -49,87 +49,84 @@
 #scrollToTopBtn:hover {
     background-color: #333;
 }
+/* Menu Bar */
 
-/* Menu Bar and Container */
-/* Menu Container */
 .menu-container {
-position: fixed;
-top: 0;
-right: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.5); 
-z-index: 1000;
-display: flex;
-justify-content: flex-end; 
-transform: translateX(100%); 
-transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
-opacity: 0; 
-pointer-events: none; 
-}
-
-
-.menu-container.open {
-transform: translateX(0);
-opacity: 1;
-pointer-events: auto; 
-}
-
-.menu {
-background: rgba(30, 23, 20, 0.8);
-
-width: 300px;
-height: 100vh;
-text-align: center;
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-
-.close-button {
-position: absolute;
-top: 20px;
-right: 20px;
-font-size: 3rem;
-cursor: pointer;
-color: white;
-}
-
-.menu ul {
-list-style: none;
-padding: 0;
-}
-
-.menu ul li {
-margin: 20px 0;
-}
-
-.menu ul li a {
-text-decoration: none;
-color: white;
-font-size: 24px;
-}
-.menu ul li a:hover{
-color: green;
-}
-
-.menu-button {
-font-size: 2.2rem;
-position: fixed;
-top: 10px;
-right: 10px;
-z-index: 14;
-color: #03a254;
-cursor: pointer;
-}
-
-
-.menu-button:hover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; 
+    transform: translateX(100%); 
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    opacity: 0; 
+    pointer-events: none; 
+  }
+  
+  
+  .menu-container.open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto; 
+  }
+  
+  .menu {
+    background: rgba(30, 23, 20, 0.8);
+    
+    width: 300px;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin: 20px 0;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+  }
+  .menu ul li a:hover{
     color: green;
-}
-
-
+  }
+  
+  .menu-button {
+    font-size: 2.2rem;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 14;
+    color: #03a254;
+    cursor: pointer;
+  }
+  
+    
+    .menu-button:hover {
+        color: green;
+    }
 /*  */
 .quickLinkTextWrapper {
     padding-top: 1rem;
@@ -163,10 +160,13 @@ body {
     position: relative;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
 .section {
     margin-bottom: 5rem;
 }
@@ -176,6 +176,12 @@ html {
     display: grid;
     grid-template-rows: 10% 1fr;
     margin-bottom: 0;
+}
+@media only screen and (max-width: 1024px) {
+    .banner::before {
+     
+        width: 100%;
+    }
 }
 
 .banner::before {
@@ -279,7 +285,7 @@ nav .nav_buttons {
 }
 
 .body .text {
-    padding-top: 900px;
+    padding-top: 700px;
     color: white;
     font-size: 18px;
 

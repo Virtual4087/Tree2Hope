@@ -22,6 +22,11 @@
         gap: 2rem;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .body .text{
+        padding-top: 885px;
+    }
+}
 
 @media only screen and (min-width: 600px) and (max-width: 650px) {
     .upper_part .links a {
@@ -87,6 +92,7 @@
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
+   
     .upper_part .links a {
         text-decoration: none;
         letter-spacing: 0.5px;
@@ -171,6 +177,7 @@
 }
 
 @media only screen and (min-width: 300px) and (max-width: 399px) {
+    
     .upper_part .links a {
         text-decoration: none;
         letter-spacing: 0.5px;
