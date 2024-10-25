@@ -3,6 +3,9 @@ const showPopupButtons = document.querySelectorAll(".showPopupButton");
 const closePopupButton = document.querySelector(".closePopupButton");
 const popup = document.querySelector(".popup");
 const overlay = document.getElementById("overlay");
+const openMenuButton = document.getElementById('openMenu');
+const closeMenuButton = document.getElementById('closeMenu');
+const menuContainer = document.getElementById('menuContainer');
 // showPopupButton.addEventListener("click", function() {
 //   popup.style.display = "block";
 //   overlay.style.display = "block";
@@ -27,23 +30,30 @@ closePopupButton.addEventListener("click", function () {
   overlay.style.display = "none";
 });
 
+// Handle opening the menu with the hamburger icon
 document.getElementById("openMenu").addEventListener("click", function () {
-  document.getElementById("menuContainer").style.display = "flex";
+  console.log("Menu toggle clicked");
+  document.getElementById("menuContainer").classList.add("open"); // Add 'open' class to slide the menu in
 });
 
+// Handle closing the menu with the close button
 document.getElementById("closeMenu").addEventListener("click", function () {
-  document.getElementById("menuContainer").style.display = "none";
+  document.getElementById("menuContainer").classList.remove("open"); // Remove 'open' class to slide the menu out
 });
 
+// Optional: Handle closing the menu when clicking on any element with the .close class
 document.querySelectorAll(".close").forEach((element) => {
   element.addEventListener("click", function () {
-    document.getElementById("menuContainer").style.display = "none";
+    document.getElementById("menuContainer").classList.remove("open");
   });
 });
 
+
+// Function to close the menu (called on anchor tag click)
 function handleClose() {
-  document.getElementById("menuContainer").style.display = "none";
+  document.getElementById("menuContainer").classList.remove("open");
 }
+
 
 let mybutton = document.getElementById("scrollToTopBtn");
 window.onscroll = function () {
